@@ -35,11 +35,11 @@ ul, li, a, p, hr {
 	box-shadow: 0 1px 3px 1px rgba(0, 128, 0, 0.5);
 }
 .logo {
-	width: 300px;
+	width: 305px;
 	height: 53px;
 	position: absolute;
 	top: 13px;
-	left: 0;
+	left: 5px;
 	right: 0;
 	margin: 0 auto;
 }
@@ -162,13 +162,14 @@ ul, li, a, p, hr {
 	height: 100vh;
 	margin-top: 72px;
 	text-align: center;
-	background: #fff url('../img/img_bg.jpg') no-repeat 0 65px fixed;
+	background: #fff url('../img/img_bg.jpg') no-repeat fixed;
+	background-position: 48% 65px;
 	background-size: cover;
 	overflow: auto;
 }
 .banner .banner_text {
 	position: relative;
-	top: 50px;
+	top: 230px;
 	padding: 0 10px;
 	font-family: 'Great Vibes', cursive;
 	color: yellow;
@@ -405,9 +406,8 @@ ul, li, a, p, hr {
 		font-size: 0.8rem;
 	}
 
-	.banner {
-		margin-top: 65px;
-		background-position-x: 48%;
+	.banner .banner_text {
+		top: 200px;
 	}
 	.banner_text h1 {
 		font-size: 1.9rem;
@@ -458,9 +458,6 @@ ul, li, a, p, hr {
 
 	.banner {
 		background-position-x: 50%;
-	}
-	.banner .banner_text {
-		top: 90px;
 	}
 	.banner_text h1 {
 		font-size: 1.8rem;
@@ -517,10 +514,6 @@ ul, li, a, p, hr {
 	.banner {
 		background-position-x: 51%;
 	}
-	.banner .banner_text {
-		top: 40px;
-	}
-
 	.banner_text h1 {
 		font-size: 1.5rem;
 	}
