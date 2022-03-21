@@ -172,8 +172,7 @@ ul, li, a, p, hr {
 	display: none;
 }
 .banner .banner_text {
-	position: relative;
-	top: 230px;
+	margin-top: 28%;
 	padding: 0 10px;
 	padding-bottom: 10px;
 	font-family: 'Great Vibes', cursive;
@@ -395,6 +394,9 @@ ul, li, a, p, hr {
 	.banner {
 		margin-top: 65px;
 	}
+	.banner .banner_text {
+		margin-top: 27%;
+	}
 
 	.content .item_text {
 		font-size: 0.85rem;
@@ -412,7 +414,7 @@ ul, li, a, p, hr {
 	}
 
 	.banner .banner_text {
-		top: 200px;
+		margin-top: 35%;
 	}
 	.banner_text h1 {
 		font-size: 1.9rem;
@@ -464,6 +466,9 @@ ul, li, a, p, hr {
 	.banner {
 		background-position-x: 50%;
 	}
+	.banner .banner_text {
+		margin-top: 65%;
+	}
 	.banner_text h1 {
 		font-size: 1.8rem;
 	}
@@ -510,12 +515,21 @@ ul, li, a, p, hr {
 	}
 }
 
+@media only screen and (max-width:376px) {
+	.banner .banner_text {
+		margin-top: 73%;
+	}
+}
+
 @media only screen and (max-width:321px) {
 	.menu_btn {
 		font-size: 0.8rem;
 		margin-right: -5px;
 	}
 
+	.banner .banner_text {
+		margin-top: 87%;
+	}
 	.banner {
 		background-position-x: 51%;
 	}
