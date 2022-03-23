@@ -15,7 +15,7 @@ html {
 }
 
 body {
-	font-family: 'Roboto Condensed', sans-serif;
+	font-family: 'Roboto', sans-serif;
 	scroll-behavior: smooth;
 }
 
@@ -35,11 +35,11 @@ ul, li, a, p, hr {
 	box-shadow: 0 1px 3px 1px rgba(0, 128, 0, 0.5);
 }
 .logo {
-	width: 300px;
+	width: 305px;
 	height: 53px;
 	position: absolute;
 	top: 13px;
-	left: 0;
+	left: 5px;
 	right: 0;
 	margin: 0 auto;
 }
@@ -213,6 +213,8 @@ ul, li, a, p, hr {
 	overflow-y: hidden;
 	overflow-x: auto;
 	-webkit-overflow-scrolling: touch;
+	scrollbar-width: none;
+	-ms-overflow-style: none;
 	scroll-behavior: smooth;
 	white-space: nowrap;
 }
@@ -268,7 +270,7 @@ ul, li, a, p, hr {
 	margin: 0 5px;
 	border: 1px solid #494949;
 	border-radius: 100%;
-	padding: 8px;
+	padding: 11px;
 	font-size: 0.8rem;
 	color: #494949;
 	text-decoration: none;
