@@ -161,20 +161,56 @@ ul, li, a, p, hr {
 	margin-top: 80px;
 	padding: 20px 10px;
 }
+
 /* waqiyat CSS starts here */
 .main .waqiyat {
 	width: 100%;
 	height: 130px;
-	box-shadow: inset 0 -8px 10px rgba(255,255,255,0.5);
-	overflow: hidden;
 }
 .waqiyat h1 {
+	margin-bottom: 10px;
 	font-size: 2.3rem;
 	font-weight: bold;
 	color: rgba(0, 100, 0, 1);
 	text-shadow: -3px 3px 5px rgba(0, 100, 0, 0.5);
 }
-.waqiyat p {
+.waqiyat a {
+	font-size: 1rem;
+	font-weight: bold;
+	color: green;
+	text-decoration: none;
+	transition-property: all;
+	transition-duration: 0.3s;
+}
+.waqiyat a:hover {
+	color: yellow;
+	text-shadow: 0 0 3px rgba(0, 0, 0,1);
+}
+.waqiya_pg {
+	display: none;
+	position: absolute;
+	top: 73px;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	width: 90vw;
+	height: 85vh;
+	background-color: #fff;
+	margin: auto;
+	padding: 25px;
+	border: 0;
+	border-radius: 10px;
+	box-shadow: 0 0 13px 3px rgba(0, 0, 0,1);
+	overflow-x: hidden;
+	overflow-y: auto;
+	scrollbar-width: none;
+	-ms-overflow-style: none;
+	z-index: 10;
+}
+.waqiya_pg::-webkit-scrollbar {
+	display: none;
+}
+.waqiya_pg p {
 	margin-bottom: 25px;
 	font-size: 1rem;
 	font-weight: 400;
@@ -196,6 +232,7 @@ ul, li, a, p, hr {
 .main .read_less {
 	display: none;
 }
+
 /* bayan CSS starts here */
 .main .bayan {
 	width: 100%;
