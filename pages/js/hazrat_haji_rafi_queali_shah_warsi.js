@@ -23,6 +23,7 @@ function close_resp_nav() {
 
 
 // waqiyat JS
+/*
 let read_more_btn = document.querySelector(".read_more")
 let read_less_btn = document.querySelector(".read_less")
 let waqiyat_div = document.querySelector(".waqiyat")
@@ -40,7 +41,17 @@ function close_waqiyat() {
     read_less_btn.style.display = "none"
     read_more_btn.style.display = "block"
 }
+*/
+// waqiyat modal JS
+let waqiyat = document.querySelectorAll("#waqiya")
+let waqiyat_pages = document.querySelectorAll(".waqiya_pg")
 
+for(let i = 0; i <= waqiyat.length-1; i++){
+    waqiyat[i].addEventListener('click', function(e){
+        waqiyat_pages[i].style.display = "block"
+        e.preventDefault()
+    })
+}
 
 
 // bayan JS
