@@ -174,26 +174,33 @@ ul, li, a, p, hr {
 	color: rgba(0, 100, 0, 1);
 	text-shadow: -3px 3px 5px rgba(0, 100, 0, 0.5);
 }
-.waqiyat a {
+.waqiyat_container {
+	padding: 0 10px;
+}
+.waqiyat_container a {
+	margin-right: 15px;
 	font-size: 1rem;
 	font-weight: bold;
-	color: green;
+	color: rgba(0, 100, 0, 1);
 	text-decoration: none;
 	transition-property: all;
 	transition-duration: 0.3s;
 }
-.waqiyat a:hover {
-	color: yellow;
-	text-shadow: 0 0 3px rgba(0, 0, 0,1);
+.waqiyat_container a:hover {
+	color: blue;
+	text-shadow: 0 0 1px rgba(0, 100, 0, 1);
+}
+.waqiyat_container a:last-child {
+	margin-right: 0;
 }
 .waqiya_pg {
 	display: none;
-	position: absolute;
+	position: fixed;
 	top: 73px;
 	left: 0;
 	right: 0;
 	bottom: 0;
-	width: 90vw;
+	max-width: 1200px;
 	height: 85vh;
 	background-color: #fff;
 	margin: auto;
@@ -209,6 +216,16 @@ ul, li, a, p, hr {
 }
 .waqiya_pg::-webkit-scrollbar {
 	display: none;
+}
+.waqiya_pg .waqiya_pg_close {
+	position: absolute;
+	top: 15px;
+	right: 18px;
+	font-family: cursive;
+	font-size: 1.5rem;
+	font-weight: 100;
+	color: red;
+	cursor: pointer;
 }
 .waqiya_pg p {
 	margin-bottom: 25px;
@@ -407,6 +424,69 @@ ul, li, a, p, hr {
 	}
 }
 
+.rotate_anim {
+	-webkit-animation: rotate_anim 0.5s linear 0s;
+	animation: rotate_anim 0.5s linear 0s;
+	-webkit-animation-iteration-count: infinite;
+	animation-iteration-count: infinite;
+	-webkit-animation-fill-mode: both;
+	animation-fill-mode: both;
+}
+ @keyframes rotate_anim {
+	0% {
+		-webkit-transform: rotate(0deg) scale(1);
+		transform: rotate(0deg) scale(1);
+	}
+	100% {
+		-webkit-transform: rotate(360deg) scale(1.1);
+		transform: rotate(360deg) scale(1.1);
+	}
+ }
+
+.slideIn_right_anim {
+	-webkit-animation: slideIn_right_anim 0.5s ease-in-out 0s;
+	animation: slideIn_right_anim 0.5s ease-in-out 0s;
+	-webkit-animation-fill-mode: both;
+	animation-fill-mode: both;
+	-webkit-transform-origin: left top;
+	transform-origin: left top;
+}
+@keyframes slideIn_right_anim {
+	0% {
+		opacity: 0;
+		-webkit-transform: scale(0.8);
+		transform: scale(0.8);
+	}
+	100% {
+		opacity: 1;
+		-webkit-transform: scale(1);
+		transform: scale(1);
+	}
+}
+
+.slideOut_left_anim {
+	-webkit-animation: slideOut_left_anim 0.5s ease-in-out 0s;
+	animation: slideOut_left_anim 0.5s ease-in-out 0s;
+	-webkit-animation-fill-mode: both;
+	animation-fill-mode: both;
+	-webkit-transform-origin: right top;
+	transform-origin: right top;
+}
+@keyframes slideOut_left_anim {
+	0% {
+		opacity: 1;
+		-webkit-transform: scale(1);
+		transform: scale(1);
+	}
+	100% {
+		opacity: 0;
+		-webkit-transform: scale(0.8);
+		transform: scale(0.8);
+	}
+}
+
+
+
 /* media query */
 @media only screen and (max-width:1025px) {
 	.logo {
@@ -416,6 +496,13 @@ ul, li, a, p, hr {
 	.mynav li {
 		margin-right: 28px;
 		font-size: .8rem;
+	}
+
+	.waqiya_pg {
+		top: 140px;
+		height: 100vh;
+		border-radius: 0;
+		box-shadow: none;
 	}
 }
 
@@ -427,6 +514,11 @@ ul, li, a, p, hr {
 	.mynav li {
 		margin-right: 18px;
 		font-size: 0.8rem;
+	}
+
+	.waqiya_pg p {
+		font-size: 0.8rem;
+		line-height: 25px;
 	}
 	
 }
@@ -456,9 +548,11 @@ ul, li, a, p, hr {
 	.waqiyat h1 {
 		font-size: 2rem;
 	}
-	.waqiyat p {
-		font-size: 0.8rem;
-		line-height: 25px;
+	.waqiya_pg {
+		padding: 15px;
+	}
+	.waqiya_pg p {
+		text-align: justify;
 	}
 	.main .read_more, .main .read_less {
 		width: 100%;
