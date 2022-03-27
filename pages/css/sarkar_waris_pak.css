@@ -155,6 +155,114 @@ ul, li, a, p, hr {
 	color: #000;
 }
 
+/* quotes CSS starts here */
+.quotes {
+	width: 100%;
+	padding: 20px 0;
+}
+.quotes h1 {
+	margin-bottom: 20px;
+	font-size: 2.3rem;
+	font-weight: bold;
+	color: rgba(0, 100, 0, 1);
+	text-shadow: -3px 3px 5px rgba(0, 100, 0, 0.5);
+}
+
+/* main starts here */
+.main {
+	margin-top: 80px;
+	padding: 20px 10px;
+}
+
+/* waqiyat CSS starts here */
+.main .waqiyat {
+	width: 100%;
+	height: 130px;
+}
+.waqiyat h1 {
+	margin-bottom: 10px;
+	font-size: 2.3rem;
+	font-weight: bold;
+	color: rgba(0, 100, 0, 1);
+	text-shadow: -3px 3px 5px rgba(0, 100, 0, 0.5);
+}
+.waqiyat_container {
+	padding: 0 10px;
+}
+.waqiyat_container a {
+	margin-right: 15px;
+	font-size: 1rem;
+	font-weight: bold;
+	color: rgba(0, 100, 0, 1);
+	text-decoration: none;
+	transition-property: all;
+	transition-duration: 0.3s;
+}
+.waqiyat_container a:hover {
+	color: blue;
+	text-shadow: 0 0 1px rgba(0, 100, 0, 1);
+}
+.waqiyat_container a:last-child {
+	margin-right: 0;
+}
+.waqiya_pg {
+	display: none;
+	position: fixed;
+	top: 11%;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	max-width: 1200px;
+	height: 85vh;
+	background-color: #fff;
+	margin: 0 auto;
+	padding: 25px;
+	border: 0;
+	border-radius: 10px;
+	box-shadow: 0 0 13px 3px rgba(0, 0, 0,1);
+	overflow-x: hidden;
+	overflow-y: auto;
+	scrollbar-width: none;
+	-ms-overflow-style: none;
+	z-index: 10;
+}
+.waqiya_pg::-webkit-scrollbar {
+	display: none;
+}
+.waqiya_pg .waqiya_pg_close {
+	position: absolute;
+	top: 15px;
+	right: 18px;
+	font-family: cursive;
+	font-size: 1.5rem;
+	font-weight: 100;
+	color: red;
+	cursor: pointer;
+}
+.waqiya_pg p {
+	margin-bottom: 25px;
+	font-size: 1rem;
+	font-weight: 400;
+	line-height: 30px;
+}
+.main .read_more, .main .read_less {
+	width: 150px;
+	margin: 20px auto;
+	padding: 10px 0;
+	border: 0;
+	border-radius: 20px;
+	background-color: coral;
+	color: #fff;
+	font-size: 1rem;
+	font-weight: bold;
+	text-align: center;
+	cursor: pointer;
+}
+.main .read_less {
+	display: none;
+}
+
+
 
 /* footer starts here */
 .footer {
@@ -172,7 +280,7 @@ ul, li, a, p, hr {
 	margin: 0 5px;
 	border: 1px solid #494949;
 	border-radius: 100%;
-	padding: 8px;
+	padding: 11px;
 	font-size: 0.8rem;
 	color: #494949;
 	text-decoration: none;
@@ -272,6 +380,68 @@ ul, li, a, p, hr {
 	}
 }
 
+.rotate_anim {
+	-webkit-animation: rotate_anim 0.5s linear 0s;
+	animation: rotate_anim 0.5s linear 0s;
+	-webkit-animation-iteration-count: infinite;
+	animation-iteration-count: infinite;
+	-webkit-animation-fill-mode: both;
+	animation-fill-mode: both;
+}
+ @keyframes rotate_anim {
+	0% {
+		-webkit-transform: rotate(0deg) scale(1);
+		transform: rotate(0deg) scale(1);
+	}
+	100% {
+		-webkit-transform: rotate(360deg) scale(1.1);
+		transform: rotate(360deg) scale(1.1);
+	}
+ }
+
+.slideIn_right_anim {
+	-webkit-animation: slideIn_right_anim 0.5s ease-in-out 0s;
+	animation: slideIn_right_anim 0.5s ease-in-out 0s;
+	-webkit-animation-fill-mode: both;
+	animation-fill-mode: both;
+	-webkit-transform-origin: left top;
+	transform-origin: left top;
+}
+@keyframes slideIn_right_anim {
+	0% {
+		opacity: 0;
+		-webkit-transform: scale(0.8);
+		transform: scale(0.8);
+	}
+	100% {
+		opacity: 1;
+		-webkit-transform: scale(1);
+		transform: scale(1);
+	}
+}
+
+.slideOut_left_anim {
+	-webkit-animation: slideOut_left_anim 0.5s ease-in-out 0s;
+	animation: slideOut_left_anim 0.5s ease-in-out 0s;
+	-webkit-animation-fill-mode: both;
+	animation-fill-mode: both;
+	-webkit-transform-origin: right top;
+	transform-origin: right top;
+}
+@keyframes slideOut_left_anim {
+	0% {
+		opacity: 1;
+		-webkit-transform: scale(1);
+		transform: scale(1);
+	}
+	100% {
+		opacity: 0;
+		-webkit-transform: scale(0.8);
+		transform: scale(0.8);
+	}
+}
+
+
 /* media query */
 @media only screen and (max-width:1025px) {
 	.logo {
@@ -281,6 +451,10 @@ ul, li, a, p, hr {
 	.mynav li {
 		margin-right: 28px;
 		font-size: .8rem;
+	}
+
+	.waqiya_pg {
+		width: 98%;
 	}
 }
 
@@ -292,6 +466,17 @@ ul, li, a, p, hr {
 	.mynav li {
 		margin-right: 18px;
 		font-size: 0.8rem;
+	}
+
+	.waqiya_pg {
+		height: unset;
+		top: 8.8%;
+		border-radius: 0;
+		box-shadow: none;
+	}
+	.waqiya_pg p {
+		font-size: 0.8rem;
+		line-height: 25px;
 	}
 	
 }
@@ -316,6 +501,26 @@ ul, li, a, p, hr {
 		display: block;
 		margin-bottom: 7px;
 		font-size: 0.9rem;
+	}
+
+	.waqiyat h1 {
+		font-size: 2rem;
+	}
+	.waqiya_pg {
+		padding: 15px;
+	}
+	.waqiya_pg p {
+		text-align: justify;
+	}
+	.main .read_more, .main .read_less {
+		width: 100%;
+		padding: 8px 0;
+		border-radius: 0;
+		font-size: 0.8rem;
+	}
+
+	.quotes h1 {
+		font-size: 2rem;
 	}
 }
 

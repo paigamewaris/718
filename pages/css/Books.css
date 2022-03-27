@@ -183,6 +183,9 @@ ul, li, a, p, hr {
 	margin-top: 3px;
 	font-size: 0.63rem;
 	font-weight: bold;
+	white-space: nowrap;
+	text-overflow:ellipsis;
+	overflow: hidden;
 }
 .box .top a {
 	float: right;

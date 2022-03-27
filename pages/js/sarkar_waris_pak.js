@@ -74,16 +74,3 @@ for(let i = 0; i <= waqiya_pg_close.length-1; i++) {
         waqiya_pg_close[i].classList.remove("rotate_anim")
     })
 }
-
-
-// bayan JS
-let bayan_div = document.querySelector(".bayan .bayan_alignment")
-let scroll_left = document.querySelector(".prev")
-let scroll_right = document.querySelector(".next")
-
-scroll_left.addEventListener('click', function(){
-    bayan_div.scrollBy(-280, 0)
-})
-scroll_right.addEventListener('click', function(){
-    bayan_div.scrollBy(280, 0)
-})
