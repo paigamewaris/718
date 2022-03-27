@@ -196,14 +196,14 @@ ul, li, a, p, hr {
 .waqiya_pg {
 	display: none;
 	position: fixed;
-	top: 73px;
+	top: 11%;
 	left: 0;
 	right: 0;
 	bottom: 0;
 	max-width: 1200px;
 	height: 85vh;
 	background-color: #fff;
-	margin: auto;
+	margin: 0 auto;
 	padding: 25px;
 	border: 0;
 	border-radius: 10px;
@@ -499,10 +499,7 @@ ul, li, a, p, hr {
 	}
 
 	.waqiya_pg {
-		top: 140px;
-		height: 100vh;
-		border-radius: 0;
-		box-shadow: none;
+		width: 98%;
 	}
 }
 
@@ -516,6 +513,12 @@ ul, li, a, p, hr {
 		font-size: 0.8rem;
 	}
 
+	.waqiya_pg {
+		height: unset;
+		top: 8.8%;
+		border-radius: 0;
+		box-shadow: none;
+	}
 	.waqiya_pg p {
 		font-size: 0.8rem;
 		line-height: 25px;
