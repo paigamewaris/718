@@ -22,24 +22,41 @@ function close_resp_nav() {
 /* JS for navigation ends here */
 
 
-// waqiyat JS
-let read_more_btn = document.querySelector(".read_more")
-let read_less_btn = document.querySelector(".read_less")
+// read more / less btn functionality
+let read_more_btns = document.querySelectorAll(".read_more")
+let read_less_btns = document.querySelectorAll(".read_less")
+let biography = document.querySelector(".Bio_graphy")
 let waqiyat_div = document.querySelector(".waqiyat")
 
-read_more_btn.addEventListener('click', open_waqiyat)
-read_less_btn.addEventListener('click', close_waqiyat)
+read_more_btns[0].addEventListener('click', open_biography)
+read_less_btns[0].addEventListener('click', close_biography)
+
+read_more_btns[1].addEventListener('click', open_waqiyat)
+read_less_btns[1].addEventListener('click', close_waqiyat)
+
+function open_biography() {
+    biography.style.height = "auto"
+    read_more_btns[0].style.display = "none"
+    read_less_btns[0].style.display = "block"
+}
+function close_biography() {
+    biography.style.height = "130px"
+    read_less_btns[0].style.display = "none"
+    read_more_btns[0].style.display = "block"
+}
 
 function open_waqiyat() {
     waqiyat_div.style.height = "auto"
-    read_more_btn.style.display = "none"
-    read_less_btn.style.display = "block"
+    read_more_btns[1].style.display = "none"
+    read_less_btns[1].style.display = "block"
 }
 function close_waqiyat() {
     waqiyat_div.style.height = "130px"
-    read_less_btn.style.display = "none"
-    read_more_btn.style.display = "block"
+    read_less_btns[1].style.display = "none"
+    read_more_btns[1].style.display = "block"
 }
+
+// waqiyat JS
 
 // waqiyat modal JS
 let waqiyat = document.querySelectorAll("#waqiya")
