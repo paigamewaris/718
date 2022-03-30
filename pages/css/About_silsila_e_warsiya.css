@@ -1,6 +1,7 @@
 @font-face {
 	src: url(../fonts/Roboto-Regular.ttf);
 	font-family: 'Roboto', sans-serif;
+	font-display: optional;
 }
 
 * {
@@ -158,9 +159,11 @@ ul, li, a, p, hr {
 /* about CSS starts here */
 .about_section {
 	width: 100%;
+	margin-top: 75px;
 }
 .about_content {
 	padding: 0 10px;
+	padding-top: 25px;
 }
 .about_content h1 {
 	margin-bottom: 10px;
@@ -192,7 +195,7 @@ ul, li, a, p, hr {
 	margin: 0 5px;
 	border: 1px solid #494949;
 	border-radius: 100%;
-	padding: 8px;
+	padding: 11px;
 	font-size: 0.8rem;
 	color: #494949;
 	text-decoration: none;
