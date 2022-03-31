@@ -1,39 +1,23 @@
-/* quotes CSS starts here */
-.quotes {
+/* personalities_container starts */
+.personalities_section {
 	width: 100%;
-	padding: 20px 0;
+	margin-top: 75px;
 }
-.quotes h1 {
-	margin-bottom: 20px;
-	font-size: 2.3rem;
-	font-weight: bold;
-	color: rgba(0, 100, 0, 1);
-	text-shadow: -3px 3px 5px rgba(0, 100, 0, 0.5);
-}
-
-/* main starts here */
-.main {
-	margin-top: 80px;
-	padding: 20px 10px;
-}
-
-/* waqiyat CSS starts here */
-.main .waqiyat {
-	width: 100%;
-	height: 130px;
-}
-.waqiyat h1 {
+.personalities_section h1 {
 	margin-bottom: 10px;
 	font-size: 2.3rem;
 	font-weight: bold;
 	color: rgba(0, 100, 0, 1);
 	text-shadow: -3px 3px 5px rgba(0, 100, 0, 0.5);
 }
-.waqiyat_container {
+.personalities_container {
 	padding: 0 10px;
+	padding-top: 15px;
 }
-.waqiyat_container a {
+.personalities_container a {
+	float: left;
 	margin-right: 15px;
+	margin-bottom: 15px;
 	font-size: 1rem;
 	font-weight: bold;
 	color: rgba(0, 100, 0, 1);
@@ -41,14 +25,14 @@
 	transition-property: all;
 	transition-duration: 0.3s;
 }
-.waqiyat_container a:hover {
+.personalities_container a:hover {
 	color: blue;
 	text-shadow: 0 0 1px rgba(0, 100, 0, 1);
 }
-.waqiyat_container a:last-child {
+.personalities_container a:last-child {
 	margin-right: 0;
 }
-.waqiya_pg {
+.personality_pg {
 	display: none;
 	position: fixed;
 	top: 11%;
@@ -69,10 +53,10 @@
 	-ms-overflow-style: none;
 	z-index: 10;
 }
-.waqiya_pg::-webkit-scrollbar {
+.personality_pg::-webkit-scrollbar {
 	display: none;
 }
-.waqiya_pg .waqiya_pg_close {
+.pers_pg_close {
 	position: absolute;
 	top: 15px;
 	right: 18px;
@@ -82,31 +66,26 @@
 	color: red;
 	cursor: pointer;
 }
-.waqiya_pg p {
+.personality_img {
+	width: 50%;
+	margin: 0 auto;
+}
+.personality_img img {
+	width: 100%;
+}
+.personality_pg h1 {
+	font-size: 1.5rem;
+	text-align: center;
+}
+.personality_pg p {
 	margin-bottom: 25px;
 	font-size: 1rem;
 	font-weight: 400;
 	line-height: 30px;
 }
-.main .read_more, .main .read_less {
-	width: 150px;
-	margin: 20px auto;
-	padding: 10px 0;
-	border: 0;
-	border-radius: 20px;
-	background-color: coral;
-	color: #fff;
-	font-size: 1rem;
-	font-weight: bold;
-	text-align: center;
-	cursor: pointer;
-}
-.main .read_less {
-	display: none;
-}
-
 
 /* for functionality */
+
 .My_slideOutRight{
 	display: block;
 	-webkit-animation: resp_nav_anim2 0.5s linear 0s;
@@ -126,25 +105,6 @@
 		transform: translate(100%, 0);
 	}
 }
-
-.rotate_anim {
-	-webkit-animation: rotate_anim 0.5s linear 0s;
-	animation: rotate_anim 0.5s linear 0s;
-	-webkit-animation-iteration-count: infinite;
-	animation-iteration-count: infinite;
-	-webkit-animation-fill-mode: both;
-	animation-fill-mode: both;
-}
- @keyframes rotate_anim {
-	0% {
-		-webkit-transform: rotate(0deg) scale(1);
-		transform: rotate(0deg) scale(1);
-	}
-	100% {
-		-webkit-transform: rotate(360deg) scale(1.1);
-		transform: rotate(360deg) scale(1.1);
-	}
- }
 
 .slideIn_right_anim {
 	-webkit-animation: slideIn_right_anim 0.5s ease-in-out 0s;
@@ -188,49 +148,24 @@
 	}
 }
 
+.rotate_anim {
+	-webkit-animation: rotate_anim 0.5s linear 0s;
+	animation: rotate_anim 0.5s linear 0s;
+	-webkit-animation-iteration-count: infinite;
+	animation-iteration-count: infinite;
+	-webkit-animation-fill-mode: both;
+	animation-fill-mode: both;
+}
+@keyframes rotate_anim {
+	0% {
+		-webkit-transform: rotate(0deg) scale(1);
+		transform: rotate(0deg) scale(1);
+	}
+	100% {
+		-webkit-transform: rotate(360deg) scale(1.1);
+		transform: rotate(360deg) scale(1.1);
+	}
+}
+
 
 /* media query */
-@media only screen and (max-width:1025px) {
-
-	.waqiya_pg {
-		width: 98%;
-	}
-}
-
-@media only screen and (max-width: 769px) {
-
-	.waqiya_pg {
-		height: unset;
-		top: 8.8%;
-		border-radius: 0;
-		box-shadow: none;
-	}
-	.waqiya_pg p {
-		font-size: 0.8rem;
-		line-height: 25px;
-	}
-	
-}
-
-@media only screen and (max-width:426px) {
-
-	.waqiyat h1 {
-		font-size: 2rem;
-	}
-	.waqiya_pg {
-		padding: 15px;
-	}
-	.waqiya_pg p {
-		text-align: justify;
-	}
-	.main .read_more, .main .read_less {
-		width: 100%;
-		padding: 8px 0;
-		border-radius: 0;
-		font-size: 0.8rem;
-	}
-
-	.quotes h1 {
-		font-size: 2rem;
-	}
-}

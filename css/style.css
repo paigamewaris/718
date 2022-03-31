@@ -156,114 +156,6 @@ ul, li, a, p, hr {
 	color: #000;
 }
 
-/* banner starts here */
-.banner {
-	width: 100%;
-	height: 100vh;
-	margin-top: 72px;
-	text-align: center;
-	background: #fff url('../img/img_bg.jpg') no-repeat fixed;
-	background-position: 48% 65px;
-	background-size: cover;
-	overflow: auto;
-	scrollbar-width: none;
-}
-.banner::-webkit-scrollbar {
-	display: none;
-}
-.banner .banner_text {
-	margin-top: 28%;
-	padding: 0 10px;
-	padding-bottom: 10px;
-	font-family: 'Great Vibes', cursive;
-	color: yellow;
-	text-shadow: -10px 5px 5px green;
-}
-.banner_text h1 {
-	font-family: 'Lobster Two', cursive;
-	font-size: 3rem;
-	letter-spacing: 1px;
-}
-.banner_text h2 {
-	font-family: 'Lobster Two', cursive;
-	font-size: 2rem;
-	letter-spacing: 1px;
-}
-.banner_text h2 span {
-	position: relative;
-	left: 170px;
-}
-.banner_text p {
-	display: inline-block;
-	font-family: 'Roboto', sans-serif;
-	font-size: 1rem;
-	text-shadow: 0 0 0 green;
-	border-radius: 8px;
-	background-color: rgba(0,0,0,0.3);
-	box-shadow: 0 0 5px 1px rgba(0,90,0,0.5);
-}
-.banner_text p:nth-child(3) {
-	margin-top: 20px;
-	margin-bottom: 15px;
-	font-weight: bold;
-	text-transform: uppercase;
-}
-
-/* content section starts here */
-.content {
-	width: 100%;
-	padding: 10px;
-}
-.content .item.item-mt {
-	margin-top: 5%;
-}
-.content .item {
-	float: left;
-	width: 30%;
-	padding: 78px 0;
-	margin: 0 5% 5% 0;
-	border: 1px solid rgba(0, 90, 0, 0.5);
-	border-radius: 8px;
-	background: #000 url('../img/bg_img.jpg') no-repeat center;
-	background-size: cover;
-	text-decoration: none;
-	transition-duration: 0.5s;
-	transition-property: box-shadow;
-	position: relative;
-}
-
-.content .item:nth-child(3) {
-	margin-right: 0;
-}
-.content .item:nth-child(6) {
-	margin-right: 0;
-}
-.content .item:hover {
-	-webkit-box-shadow: inset 0 0 20px 10px rgba(0, 90, 0, 1);
-	box-shadow: inset 0 0 20px 10px rgba(0, 90, 0, 1);
-}
-.content .item_text {
-	font-family: 'Lobster Two', sans-serif;
-	font-size: 1rem;
-	font-weight: bold;
-	color: rgba(0,100,0,1);
-	letter-spacing: 1px;
-	text-align: center;
-	text-shadow: 0 0 3px rgba(0,0,130,0.5);
-	position: absolute;
-	top: 40%;
-	left: 0;
-	right: 0;
-	margin: 0 auto;
-}
-.content .item:nth-child(2) .item_text {
-	top: 33%;
-}
-.content .item:nth-child(3) .item_text {
-	top: 33%;
-	left: 100px;
-}
-
 
 /* footer starts here */
 .footer {
@@ -390,17 +282,6 @@ ul, li, a, p, hr {
 		margin-right: 28px;
 		font-size: .8rem;
 	}
-
-	.banner {
-		margin-top: 65px;
-	}
-	.banner .banner_text {
-		margin-top: 27%;
-	}
-
-	.content .item_text {
-		font-size: 0.85rem;
-	}
 }
 
 @media only screen and (max-width: 769px) {
@@ -411,32 +292,6 @@ ul, li, a, p, hr {
 	.mynav li {
 		margin-right: 18px;
 		font-size: 0.8rem;
-	}
-
-	.banner .banner_text {
-		margin-top: 35%;
-	}
-	.banner_text h1 {
-		font-size: 1.9rem;
-	}
-	.banner_text h2 {
-		font-size: 1.5rem;
-	}
-	.banner_text h2 span {
-		left: 130px;
-	}
-	.banner_text p {
-		font-size: 0.9rem;
-	}
-
-	.content .item {
-		padding: 58px 0;
-	}
-	.content .item_text {
-		font-size: 0.6rem;
-	}
-	.content .item:nth-child(3) .item_text {
-		left: 75px;
 	}
 	
 }
@@ -463,46 +318,6 @@ ul, li, a, p, hr {
 		font-size: 0.9rem;
 	}
 
-	.banner {
-		background-position-x: 50%;
-	}
-	.banner .banner_text {
-		margin-top: 65%;
-	}
-	.banner_text h1 {
-		font-size: 1.8rem;
-	}
-	.banner_text h2 {
-		font-size: 1.3rem;
-	}
-	.banner_text h2 span {
-		left: 110px;
-	}
-	.banner_text p {
-		font-size: 0.7rem;
-	}
-
-	.content .item {
-		width: 100%;
-		margin: 0;
-		margin-bottom: 10px;
-		padding: 78px 0;
-		transition: none;
-	}
-	.content .item:hover {
-		-webkit-box-shadow: unset;
-		box-shadow: unset;
-	}
-	.content .item_text {
-		font-size: 1rem;
-	}
-	.content .item:nth-child(3) .item_text {
-		left: 100px;
-	}
-	.content .item:nth-child(2), .content .item:nth-child(3), .content .item:nth-child(5) {
-		margin: 0 0 10px 0;
-	}
-
 	.footer .social_media a {
 		transition: none;
 	}
@@ -515,35 +330,9 @@ ul, li, a, p, hr {
 	}
 }
 
-@media only screen and (max-width:376px) {
-	.banner .banner_text {
-		margin-top: 73%;
-	}
-}
-
 @media only screen and (max-width:321px) {
 	.menu_btn {
 		font-size: 0.8rem;
 		margin-right: -5px;
-	}
-
-	.banner .banner_text {
-		margin-top: 87%;
-	}
-	.banner {
-		background-position-x: 51%;
-	}
-	.banner_text h1 {
-		font-size: 1.5rem;
-	}
-	.banner_text h2 {
-		font-size: 1.1rem;
-	}
-	.banner_text h2 span {
-		left: 95px;
-	}
-
-	.content .item_text {
-		font-size: 0.8rem;
 	}
 }
