@@ -83,9 +83,16 @@
 	font-weight: 400;
 	line-height: 30px;
 }
+.personality_pg address {
+	margin-bottom: 20px;
+	font-size: 1rem;
+	font-style: normal;
+	color: rgba(0, 100, 0, 1);
+	text-align: center;
+}
+
 
 /* for functionality */
-
 .My_slideOutRight{
 	display: block;
 	-webkit-animation: resp_nav_anim2 0.5s linear 0s;
