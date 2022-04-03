@@ -6,7 +6,8 @@
 }
 .books_section h1 {
 	margin-left: 20px;
-	text-shadow: -3px 3px 5px rgba(0, 100, 0, 0.5);
+	letter-spacing: 1px;
+	text-shadow: 0 0 5px rgba(0, 100, 0, 0.5);
 }
 .books_section .boxs_container {
 	margin-top: 20px;
