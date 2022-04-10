@@ -41,16 +41,21 @@
 	padding: 0 10px;
 	width: 100%;
 	list-style: none;
+	font-family: 'Lobster Two', cursive;
+	font-size: 1rem;
+	letter-spacing: 2px;
+	color: rgba(0, 100, 0, 1);
+	text-shadow: 0 0 5px rgba(0, 100, 0, 0.5);
 }
 .quates_ul li span {
 	position: relative;
 }
 .quates_ul li span:nth-child(1) {
-	top: 5px;
-	font-size: 1.3rem;
+	top: 1px;
+	font-size: 2rem;
 }
 .quates_ul li span:nth-child(2) {
-	left: 8px;
+	left: 5px;
 }
 
 /* waqiyat CSS starts here */
