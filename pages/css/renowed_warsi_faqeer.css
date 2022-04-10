@@ -16,7 +16,7 @@
 }
 .personalities_container a {
 	float: left;
-	margin-right: 15px;
+	margin-right: 23px;
 	margin-bottom: 15px;
 	font-size: 1rem;
 	font-weight: bold;
@@ -35,12 +35,12 @@
 .personality_pg {
 	display: none;
 	position: fixed;
-	top: 14.5%;
+	top: 10.5%;
 	left: 0;
 	right: 0;
 	bottom: 0;
 	max-width: 1200px;
-	height: 85vh;
+	height: 88vh;
 	background-color: #fff;
 	margin: 0 auto;
 	padding: 25px;
@@ -67,15 +67,17 @@
 	cursor: pointer;
 }
 .personality_img {
-	width: 50%;
+	width: 100%;
 	margin: 0 auto;
+	text-align: center;
 }
 .personality_img img {
-	width: 100%;
+	max-width: 100%;
 }
 .personality_pg h1 {
 	font-size: 1.5rem;
 	text-align: center;
+	text-shadow: none;
 }
 .personality_pg p {
 	margin-bottom: 25px;
@@ -84,7 +86,7 @@
 	line-height: 30px;
 }
 .personality_pg address {
-	margin-bottom: 20px;
+	margin: 15px 0 10px 0;
 	font-size: 1rem;
 	font-style: normal;
 	color: rgba(0, 100, 0, 1);
