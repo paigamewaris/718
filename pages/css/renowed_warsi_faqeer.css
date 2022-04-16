@@ -10,14 +10,15 @@
 	color: rgba(0, 100, 0, 1);
 	text-shadow: -3px 3px 5px rgba(0, 100, 0, 0.5);
 }
-.personalities_container {
+.modal_container {
 	padding: 0 10px;
 	padding-top: 15px;
 }
-.personalities_container a {
-	float: left;
+.modal_container a {
+	display: inline-block;
 	margin-right: 23px;
 	margin-bottom: 15px;
+	width: 100%;
 	font-size: 1rem;
 	font-weight: bold;
 	color: rgba(0, 100, 0, 1);
@@ -25,20 +26,19 @@
 	transition-property: all;
 	transition-duration: 0.3s;
 }
-.personalities_container a:hover {
+.modal_container a:hover {
 	color: blue;
 	text-shadow: 0 0 1px rgba(0, 100, 0, 1);
 }
-.personalities_container a:last-child {
+.modal_container a:last-child {
 	margin-right: 0;
 }
 .personality_pg {
 	display: none;
 	position: fixed;
-	top: 10.5%;
+	top: 11.5%;
 	left: 0;
 	right: 0;
-	bottom: 0;
 	max-width: 1200px;
 	height: 88vh;
 	background-color: #fff;
@@ -58,9 +58,8 @@
 }
 .pers_pg_close {
 	position: absolute;
-	top: 15px;
-	right: 18px;
-	font-family: cursive;
+	top: 13px;
+	right: 13px;
 	font-size: 1.5rem;
 	font-weight: 100;
 	color: red;
@@ -178,3 +177,42 @@
 
 
 /* media query */
+@media only screen and (max-width:769px) {
+	.personality_pg {
+		padding: 20px;
+	}
+	.personality_pg h1 {
+		font-size: 1rem;
+	}
+	.personality_pg p {
+		margin-bottom: 20px;
+		font-size: 0.7rem;
+		line-height: 23px;
+	}
+}
+
+@media only screen and (max-width:481px) {
+	.modal_container a {
+		font-size: 0.8rem;
+	}
+	.personality_pg {
+		height: 90vh;
+	}
+}
+
+@media only screen and (max-width:320px) {
+	.personalities_section {
+		margin-top: 50px;
+	}
+
+	.modal_container a {
+		font-size: 0.7rem;
+	}
+
+	.personality_pg address {
+		font-size: 0.8rem;
+	}
+	.personality_pg h1 {
+		font-size: 0.9rem;
+	}
+}

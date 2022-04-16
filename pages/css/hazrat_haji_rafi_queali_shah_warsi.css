@@ -4,10 +4,23 @@
 	padding: 20px 10px;
 }
 
+/* section CSS */
+.section {
+	padding: 20px 0;
+}
+.section h1 {
+	margin-bottom: 20px;
+	font-size: 2rem;
+	font-weight: bold;
+	letter-spacing: 1px;
+	color: rgba(0, 100, 0, 1);
+	text-shadow: 0 0 5px rgba(0, 100, 0, 0.5);
+}
+
 /* bigraphy CSS starts here */
 .main .Bio_graphy {
 	width: 100%;
-	height: 130px;
+	height: 150px;
 	overflow: hidden;
 }
 .Bio_graphy h1 {
@@ -24,18 +37,11 @@
 	font-weight: 400;
 	line-height: 30px;
 }
+
 /* quotes CSS starts here */
 .quotes {
 	width: 100%;
 	padding: 20px 0;
-}
-.quotes h1 {
-	margin-bottom: 20px;
-	font-size: 2rem;
-	font-weight: bold;
-	letter-spacing: 1px;
-	color: rgba(0, 100, 0, 1);
-	text-shadow: 0 0 5px rgba(0, 100, 0, 0.5);
 }
 .quates_ul {
 	padding: 0 10px;
@@ -44,32 +50,25 @@
 	font-family: 'Lobster Two', cursive;
 	font-size: 1rem;
 	letter-spacing: 2px;
-	color: rgba(0, 100, 0, 1);
-	text-shadow: 0 0 5px rgba(0, 100, 0, 0.5);
 }
 .quates_ul li span {
-	position: relative;
+	display: inline-block;
+	vertical-align: top;
 }
 .quates_ul li span:nth-child(1) {
-	top: 1px;
+	width: 1.4%;
 	font-size: 2rem;
 }
 .quates_ul li span:nth-child(2) {
-	left: 5px;
+	margin-top: 18px;
+	padding-left: 8px;
+	width: 98%;
 }
 
 /* waqiyat CSS starts here */
 .main .waqiyat {
 	width: 100%;
 	height: 130px;
-}
-.waqiyat h1 {
-	margin-bottom: 20px;
-	font-size: 2rem;
-	font-weight: bold;
-	letter-spacing: 1px;
-	color: rgba(0, 100, 0, 1);
-	text-shadow: 0 0 5px rgba(0, 100, 0, 0.5);
 }
 .waqiyat_container {
 	padding: 0 10px;
@@ -116,9 +115,8 @@
 }
 .waqiya_pg .waqiya_pg_close {
 	position: absolute;
-	top: 15px;
-	right: 18px;
-	font-family: cursive;
+	top: 10px;
+	right: 10px;
 	font-size: 1.5rem;
 	font-weight: 100;
 	color: red;
@@ -151,14 +149,6 @@
 .main .bayan {
 	width: 100%;
 	padding: 20px 0;
-}
-.bayan h1 {
-	margin-bottom: 20px;
-	font-size: 2rem;
-	font-weight: bold;
-	letter-spacing: 1px;
-	color: rgba(0, 100, 0, 1);
-	text-shadow: 0 0 5px rgba(0, 100, 0, 0.5);
 }
 .bayan .bayan_alignment {
 	width: 100%;
@@ -289,9 +279,26 @@
 
 @media only screen and (max-width: 769px) {
 
+	.section {
+		padding: 10px 0;
+	}
+	.section h1 {
+		margin-bottom: 10px;
+		font-size: 1.3rem;
+	}
+
+	.quates_ul {
+		font-size: 0.8rem;
+		line-height: 25px;
+	}
+	.quates_ul li span:nth-child(2) {
+		margin-top: 5px;
+		padding-left: 8px;
+	}
+
 	.waqiya_pg {
 		height: unset;
-		top: 8.8%;
+		top: 11%;
 		border-radius: 0;
 		box-shadow: none;
 	}
@@ -302,13 +309,22 @@
 	
 }
 
-@media only screen and (max-width:426px) {
+@media only screen and (max-width:481px) {
 
-	.waqiyat h1 {
-		font-size: 2rem;
+
+	.Bio_graphy p {
+		margin-bottom: 30px;
+		font-size: 0.8rem;
+		line-height: 25px;
 	}
+
+	.quates_ul li span:nth-child(1) {
+		font-size: 1.8rem;
+	}
+
 	.waqiya_pg {
 		padding: 15px;
+		height: 89vh;
 	}
 	.waqiya_pg p {
 		text-align: justify;
@@ -320,14 +336,25 @@
 		font-size: 0.8rem;
 	}
 
-	.bayan h1 {
-		font-size: 2rem;
-	}
 	.bayan .bayan_alignment iframe {
 		width: 250px;
 	}
+}
 
-	.quotes h1 {
-		font-size: 2rem;
+@media only screen and (max-width:320px) {
+	.main {
+		margin-top: 50px;
+	}
+
+	.section h1 {
+		font-size: 1rem;
+	}
+
+	.quates_ul {
+		font-size: 0.65rem;
+	}
+
+	.modal_container a {
+		font-size: 0.9rem;
 	}
 }
