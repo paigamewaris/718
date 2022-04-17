@@ -43,9 +43,9 @@ let waqiya_pg_close = document.querySelectorAll(".waqiya_pg_close")
 for(let i = 0; i <= waqiyat.length-1; i++){
     waqiyat[i].addEventListener('click', function(e){
         waqiyat_pages[i].style.display = "block"
-        waqiyat_pages[i].classList.add("slideIn_right_anim")
+        waqiyat_pages[i].classList.add("modal_show_anim")
         setTimeout(function() {
-            waqiyat_pages[i].classList.remove("slideIn_right_anim")
+            waqiyat_pages[i].classList.remove("modal_show_anim")
         }, 500);
         e.preventDefault()
     })
@@ -53,9 +53,9 @@ for(let i = 0; i <= waqiyat.length-1; i++){
 // for close waqiya pg
 for(let i = 0; i <= waqiya_pg_close.length-1; i++) {
     waqiya_pg_close[i].addEventListener('click', function(){
-        waqiyat_pages[i].classList.add("slideOut_left_anim")
+        waqiyat_pages[i].classList.add("modal_hide_anim")
         setTimeout(function() {
-            waqiyat_pages[i].classList.remove("slideOut_left_anim")
+            waqiyat_pages[i].classList.remove("modal_hide_anim")
             waqiyat_pages[i].style.display = "none"
         }, 500);
     })

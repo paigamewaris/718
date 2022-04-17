@@ -74,13 +74,11 @@
 .waqiya_pg {
 	display: none;
 	position: fixed;
-	top: 11.5%;
-	left: 0;
-	right: 0;
-	max-width: 1200px;
-	height: 87vh;
+	top: 54%;
+	left: 50%;
+	width: 70%;
+	height: 88vh;
 	background-color: #fff;
-	margin: 0 auto;
 	padding: 25px;
 	border: 0;
 	border-radius: 5px;
@@ -90,6 +88,8 @@
 	scrollbar-width: none;
 	-ms-overflow-style: none;
 	z-index: 10;
+	-webkit-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
 }
 .waqiya_pg::-webkit-scrollbar {
 	display: none;
@@ -98,7 +98,7 @@
 	position: absolute;
 	top: 10px;
 	right: 10px;
-	font-size: 1.5rem;
+	font-size: 2rem;
 	font-weight: 100;
 	color: red;
 	cursor: pointer;
@@ -167,54 +167,41 @@
 	}
  }
 
-.slideIn_right_anim {
-	-webkit-animation: slideIn_right_anim 0.5s ease-in-out 0s;
-	animation: slideIn_right_anim 0.5s ease-in-out 0s;
+.modal_show_anim {
+	-webkit-animation: modal_show_anim 0.5s linear 0s;
+	animation: modal_show_anim 0.5s linear 0s;
 	-webkit-animation-fill-mode: both;
 	animation-fill-mode: both;
-	-webkit-transform-origin: left top;
-	transform-origin: left top;
 }
-@keyframes slideIn_right_anim {
+@keyframes modal_show_anim {
 	0% {
-		opacity: 0;
-		-webkit-transform: scale(0.8);
-		transform: scale(0.8);
+		opacity: 0.5;
 	}
 	100% {
 		opacity: 1;
-		-webkit-transform: scale(1);
-		transform: scale(1);
 	}
 }
-
-.slideOut_left_anim {
-	-webkit-animation: slideOut_left_anim 0.5s ease-in-out 0s;
-	animation: slideOut_left_anim 0.5s ease-in-out 0s;
+.modal_hide_anim {
+	-webkit-animation: modal_hide_anim 0.5s linear 0s;
+	animation: modal_hide_anim 0.5s linear 0s;
 	-webkit-animation-fill-mode: both;
 	animation-fill-mode: both;
-	-webkit-transform-origin: right top;
-	transform-origin: right top;
 }
-@keyframes slideOut_left_anim {
+@keyframes modal_hide_anim {
 	0% {
 		opacity: 1;
-		-webkit-transform: scale(1);
-		transform: scale(1);
 	}
 	100% {
 		opacity: 0;
-		-webkit-transform: scale(0.8);
-		transform: scale(0.8);
 	}
 }
-
 
 /* media query */
-@media only screen and (max-width:1025px) {
+@media only screen and (max-width:1200px) {
 
 	.waqiya_pg {
-		width: 98%;
+		width: 100%;
+		height: 92vh;
 	}
 }
 
@@ -237,12 +224,6 @@
 		padding-left: 8px;
 	}
 
-	.waqiya_pg {
-		height: unset;
-		top: 11%;
-		border-radius: 0;
-		box-shadow: none;
-	}
 	.waqiya_pg p {
 		font-size: 0.8rem;
 		line-height: 25px;
@@ -256,8 +237,9 @@
 	}
 
 	.waqiya_pg {
+		top: 53%;
 		padding: 15px;
-		height: 89vh;
+		height: 94vh;
 	}
 	.waqiya_pg p {
 		text-align: justify;
@@ -272,6 +254,9 @@
 }
 
 @media only screen and (max-width:320px) {
+	.resp_nav {
+		width: 100%;
+	}
 	.main {
 		margin-top: 50px;
 	}
@@ -286,5 +271,11 @@
 
 	.modal_container a {
 		font-size: 0.9rem;
+	}
+	.waqiya_pg h1 {
+		font-size: 1.3rem;
+	}
+	.waqiya_pg .waqiya_pg_close {
+		font-size: 1.8rem;
 	}
 }

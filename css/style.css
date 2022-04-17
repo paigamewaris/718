@@ -331,8 +331,13 @@ ul, li, a, p, hr {
 }
 
 @media only screen and (max-width:321px) {
+	
 	.menu_btn {
 		font-size: 0.8rem;
 		margin-right: -5px;
+	}
+
+	.resp_nav {
+		width: 100%;
 	}
 }

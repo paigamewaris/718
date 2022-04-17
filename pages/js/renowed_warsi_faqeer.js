@@ -26,9 +26,9 @@ let pers_pg_close = document.querySelectorAll(".pers_pg_close")
 for(let i = 0; i <= personality.length-1; i++){
     personality[i].addEventListener('click', function(e){
         personality_pg[i].style.display = "block"
-        personality_pg[i].classList.add("slideIn_right_anim")
+        personality_pg[i].classList.add("modal_show_anim")
         setTimeout(function() {
-            personality_pg[i].classList.remove("slideIn_right_anim")
+            personality_pg[i].classList.remove("modal_show_anim")
         }, 500);
         e.preventDefault()
     })
@@ -36,9 +36,9 @@ for(let i = 0; i <= personality.length-1; i++){
 // for close personality_pg
 for(let i = 0; i <= pers_pg_close.length-1; i++) {
     pers_pg_close[i].addEventListener('click', function(){
-        personality_pg[i].classList.add("slideOut_left_anim")
+        personality_pg[i].classList.add("modal_hide_anim")
         setTimeout(function() {
-            personality_pg[i].classList.remove("slideOut_left_anim")
+            personality_pg[i].classList.remove("modal_hide_anim")
             personality_pg[i].style.display = "none"
         }, 500);
     })

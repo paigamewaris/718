@@ -15,7 +15,7 @@
 .boxs_container .box {
 	float: left;
 	width: 200px;
-	margin: 20px;
+	margin: 20px 20px 0 20px;
 	text-align: center;
 }
 .box .top {
@@ -104,20 +104,32 @@
 	}
 }
 
-@media only screen and (max-width:426px) {
+@media only screen and (max-width:480px) {
 
 	.books_section h1 {
 		margin-left: 0;
+		margin-bottom: 20px;
 		font-size: 2rem;
 	}
 	.boxs_container .box {
-		width: 100%;
-		margin: 0 0 10px 0;
+		float: unset;
+		margin: 0 auto;
+		margin-bottom: 20px;
+		width: 90%;
 	}
-	.box .top h2 {
-		font-size: 0.8rem;
+	.box .top h2, .box .top a {
+		margin-bottom: 10px;
+		font-size: 1rem;
 	}
-	.box .top a {
-		font-size: 0.8rem;
+
+	.box .read_btn {
+		font-size: 1rem;
+	}
+}
+
+@media only screen and (max-width:320px) {
+	.books_section h1 {
+		font-size: 1.5rem;
+		text-align: center;
 	}
 }
