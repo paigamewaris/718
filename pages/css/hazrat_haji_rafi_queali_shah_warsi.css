@@ -92,21 +92,21 @@
 .waqiya_pg {
 	display: none;
 	position: fixed;
-	top: 50%;
-	left: 50%;
-	width: 1200px;
-	width: 70%;
-	background-color: #fff;
+	top: 90px;
+	left: 0;
+	right: 0;
+	max-width: 1200px;
+	margin: 0 auto;
 	padding: 25px;
 	border: 0;
 	border-radius: 5px;
+	background-color: #fff;
 	box-shadow: 0 0 20px 0.1px rgba(0, 0, 0,0.5);
 	overflow-x: hidden;
 	overflow-y: auto;
 	scrollbar-width: none;
 	-ms-overflow-style: none;
 	z-index: 10;
-	transform: translate(-50%, -50%);
 }
 .waqiya_pg::-webkit-scrollbar {
 	display: none;
@@ -254,13 +254,6 @@
 
 
 /* media query */
-@media only screen and (max-width:1200px) {
-	.waqiya_pg {
-		top: 55%;
-		width: 100%;
-		height: 91vh;
-	}
-}
 
 @media only screen and (max-width: 769px) {
 
@@ -282,7 +275,7 @@
 	}
 
 	.waqiya_pg {
-		top: 54.5%;
+		top: 73px;
 	}
 	.waqiya_pg p {
 		font-size: 0.8rem;
@@ -305,8 +298,7 @@
 	}
 
 	.waqiya_pg {
-		top: 54%;
-		height: 93vh;
+		top: 63px;
 	}
 	.waqiya_pg p {
 		text-align: justify;
@@ -339,6 +331,9 @@
 		font-size: 0.65rem;
 	}
 
+	.waqiya_pg {
+		top: 53px;
+	}
 	.modal_container a {
 		font-size: 0.9rem;
 	}
