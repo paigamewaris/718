@@ -18,7 +18,7 @@
 // }
 
 // personalities_section modal JS
-let personality = document.querySelectorAll("#personality")
+let personality = document.querySelectorAll(".personality")
 let personality_pg = document.querySelectorAll(".personality_pg")
 let pers_pg_close = document.querySelectorAll(".pers_pg_close")
 

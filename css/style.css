@@ -34,6 +34,19 @@ ul, li, a, p, hr {
 	z-index: 20;
 	box-shadow: 0 1px 3px 1px rgba(0, 128, 0, 0.5);
 }
+.mynavigation .logo {
+	position: absolute;
+	top: 13px;
+	left: 5px;
+	right: 0;
+	margin: 0 auto;
+	width: 23%;
+}
+.mynavigation .logo a {
+	width: 100%;
+	display: inline-block;
+	text-decoration: none;
+}
 .mynavigation .logo .img {
 	width: 100%;
 	text-align: center;
@@ -42,54 +55,6 @@ ul, li, a, p, hr {
 	max-width: 100%;
 }
 
-.logo {
-	width: 305px;
-	height: 53px;
-	position: absolute;
-	top: 13px;
-	left: 5px;
-	right: 0;
-	margin: 0 auto;
-}
-.logo a {
-	width: 100%;
-	display: inline-block;
-	color: rgba(0, 100, 0, 1);
-	text-decoration: none;
-}
-.img1_inside_logo {
-	margin-right: 8px;
-}
-.img2_inside_logo {
-	margin-left: 18px;
-}
-.img1_inside_logo, .img2_inside_logo {
-	float: left;
-	width: 45px;
-	height: 45px;
-	margin-top: 3px;
-	border-radius: 100%;
-	overflow: hidden;
-}
-.img1_inside_logo img, .img2_inside_logo img {
-	width: 100%;
-}
-.logo .text {
-	float: left;
-	font-family: 'Lobster Two', cursive;
-	font-size: 0.63rem;
-	font-weight: bold;
-	letter-spacing: 1px;
-	text-align: center;
-	line-height: 18px;
-}
-.logo .text P {
-	text-align-last: right;
-}
-.logo .text P span {
-	position: relative;
-	left: 15px;
-}
 .mynav {
 	float: right;
 	margin: 0;
@@ -291,8 +256,10 @@ ul, li, a, p, hr {
 
 @media only screen and (max-width: 769px) {
 
-	.mynavigation .logo .img {
-		width: 85%;
+	.mynavigation .logo {
+		left: 0;
+		margin: 0;
+		width: 38%;
 	}
 	.mynav li {
 		margin-right: 18px;
@@ -306,11 +273,7 @@ ul, li, a, p, hr {
 		padding: 10px;
 	}
 	.mynavigation .logo {
-		left: 0;
-		margin: 0;
-	}
-	.mynavigation .logo .img {
-		width: 70%;
+		width: 50%;
 	}
 	.mynav {
 		display: none;
@@ -336,6 +299,10 @@ ul, li, a, p, hr {
 
 @media only screen and (max-width:321px) {
 	
+	.mynavigation .logo {
+		width: 68%;
+	}
+
 	.menu_btn {
 		font-size: 0.8rem;
 		margin-right: -5px;
