@@ -1,20 +1,50 @@
-// waqiyat JS
-let read_more_btn = document.querySelector(".read_more")
-let read_less_btn = document.querySelector(".read_less")
-let waqiyat_div = document.querySelector(".waqiyat")
+// read more / less btn
+let read_more_btn = document.querySelectorAll(".read_more")
+let read_less_btn = document.querySelectorAll(".read_less")
 
-read_more_btn.addEventListener('click', open_waqiyat)
-read_less_btn.addEventListener('click', close_waqiyat)
 
+// modal container  JS
+let modal_container = document.querySelectorAll(".modal_container")
+let quotes_div = document.querySelector(".quotes")
+
+read_more_btn[0].addEventListener('click', open_quotes)
+read_less_btn[0].addEventListener('click', close_quotes)
+
+read_more_btn[1].addEventListener('click', open_talimat)
+read_less_btn[1].addEventListener('click', close_talimat)
+
+read_more_btn[2].addEventListener('click', open_waqiyat)
+read_less_btn[2].addEventListener('click', close_waqiyat)
+
+function open_quotes() {
+    quotes_div.style.height = "auto"
+    read_more_btn[0].style.display = "none"
+    read_less_btn[0].style.display = "block"
+}
+function open_talimat() {
+    modal_container[1].style.height = "auto"
+    read_more_btn[1].style.display = "none"
+    read_less_btn[1].style.display = "block"
+}
 function open_waqiyat() {
-    waqiyat_div.style.height = "auto"
-    read_more_btn.style.display = "none"
-    read_less_btn.style.display = "block"
+    modal_container[2].style.height = "auto"
+    read_more_btn[2].style.display = "none"
+    read_less_btn[2].style.display = "block"
+}
+function close_quotes() {
+    quotes_div.style.height = "200px"
+    read_less_btn[0].style.display = "none"
+    read_more_btn[0].style.display = "block"
+}
+function close_talimat() {
+    modal_container[1].style.height = "150px"
+    read_less_btn[1].style.display = "none"
+    read_more_btn[1].style.display = "block"
 }
 function close_waqiyat() {
-    waqiyat_div.style.height = "130px"
-    read_less_btn.style.display = "none"
-    read_more_btn.style.display = "block"
+    modal_container[2].style.height = "150px"
+    read_less_btn[2].style.display = "none"
+    read_more_btn[2].style.display = "block"
 }
 
 // waqiyat modal JS

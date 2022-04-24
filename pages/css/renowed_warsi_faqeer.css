@@ -35,32 +35,30 @@
 .personality_pg {
 	display: none;
 	position: fixed;
-	top: 53%;
-	left: 50%;
-	width: 1200px;
-	width: 70%;
+	top: 90px;
+	left: 0;
+	right: 0;
+	max-width: 1200px;
 	height: 88vh;
-	background-color: #fff;
 	margin: 0 auto;
 	padding: 25px;
 	border: 0;
 	border-radius: 5px;
+	background-color: #fff;
 	box-shadow: 0 0 20px 0.1px rgba(0, 0, 0,0.5);
 	overflow-x: hidden;
 	overflow-y: auto;
 	scrollbar-width: none;
 	-ms-overflow-style: none;
 	z-index: 10;
-	-webkit-transform: translate(-50%, -50%);
-	transform: translate(-50%, -50%);
 }
 .personality_pg::-webkit-scrollbar {
 	display: none;
 }
 .pers_pg_close {
 	position: absolute;
-	top: 13px;
-	right: 13px;
+	top: 10px;
+	right: 10px;
 	font-size: 2rem;
 	font-weight: 100;
 	color: red;
@@ -165,17 +163,9 @@
 }
 
 /* media query */
-@media only screen and (max-width:1200px) {
- .personality_pg {
-	 top: 55%;
-	 width: 100%;
-	 height: 95vh;
- }
-}
-
 @media only screen and (max-width:769px) {
 	.personality_pg {
-		padding: 20px;
+		top: 73px;
 	}
 	.personality_pg h1 {
 		font-size: 1rem;
@@ -192,8 +182,7 @@
 		font-size: 0.8rem;
 	}
 	.personality_pg {
-		top: 53%;
-		height: 95.5vh;
+		top: 63px;
 	}
 }
 
@@ -211,8 +200,7 @@
 	}
 
 	.personality_pg {
-		top: 410px;
-		height: 94vh;
+		top: 53px;
 	}
 	.personality_pg address {
 		font-size: 0.8rem;

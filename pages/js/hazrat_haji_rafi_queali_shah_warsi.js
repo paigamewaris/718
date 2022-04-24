@@ -2,13 +2,17 @@
 let read_more_btns = document.querySelectorAll(".read_more")
 let read_less_btns = document.querySelectorAll(".read_less")
 let biography = document.querySelector(".Bio_graphy")
+let quotes_div = document.querySelector(".quotes")
 let waqiyat_div = document.querySelector(".waqiyat")
 
 read_more_btns[0].addEventListener('click', open_biography)
 read_less_btns[0].addEventListener('click', close_biography)
 
-read_more_btns[1].addEventListener('click', open_waqiyat)
-read_less_btns[1].addEventListener('click', close_waqiyat)
+read_more_btns[1].addEventListener('click', open_quotes)
+read_less_btns[1].addEventListener('click', close_quotes)
+
+read_more_btns[2].addEventListener('click', open_waqiyat)
+read_less_btns[2].addEventListener('click', close_waqiyat)
 
 function open_biography() {
     biography.style.height = "auto"
@@ -16,23 +20,33 @@ function open_biography() {
     read_less_btns[0].style.display = "block"
 }
 function close_biography() {
-    biography.style.height = "130px"
+    biography.style.height = "150px"
     read_less_btns[0].style.display = "none"
     read_more_btns[0].style.display = "block"
 }
 
-function open_waqiyat() {
-    waqiyat_div.style.height = "auto"
+function open_quotes() {
+    quotes_div.style.height = "auto"
     read_more_btns[1].style.display = "none"
     read_less_btns[1].style.display = "block"
 }
-function close_waqiyat() {
-    waqiyat_div.style.height = "130px"
+function close_quotes() {
+    quotes_div.style.height = "200px"
     read_less_btns[1].style.display = "none"
     read_more_btns[1].style.display = "block"
 }
 
-// waqiyat JS
+function open_waqiyat() {
+    waqiyat_div.style.height = "auto"
+    read_more_btns[2].style.display = "none"
+    read_less_btns[2].style.display = "block"
+}
+function close_waqiyat() {
+    waqiyat_div.style.height = "130px"
+    read_less_btns[2].style.display = "none"
+    read_more_btns[2].style.display = "block"
+}
+
 
 // waqiyat modal JS
 let waqiyat = document.querySelectorAll(".waqiya")
