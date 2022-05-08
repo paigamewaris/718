@@ -64,6 +64,12 @@
 	color: red;
 	cursor: pointer;
 }
+.pers_pg_close::selection {
+	background-color: transparent;
+}
+.pers_pg_close span::selection {
+	background-color: transparent;
+}
 .personality_img {
 	width: 100%;
 	margin: 0 auto;
@@ -187,9 +193,6 @@
 }
 
 @media only screen and (max-width:320px) {
-	.resp_nav {
-		width: 100%;
-	}
 
 	.personalities_section {
 		margin-top: 50px;

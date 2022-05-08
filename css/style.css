@@ -34,9 +34,12 @@ ul, li, a, p, hr {
 	z-index: 20;
 	box-shadow: 0 1px 3px 1px rgba(0, 128, 0, 0.5);
 }
+.mynavigation .common_wrapper {
+	position: relative;
+}
 .mynavigation .logo {
 	position: absolute;
-	top: 13px;
+	top: -12px;
 	left: 5px;
 	right: 0;
 	margin: 0 auto;
@@ -94,8 +97,8 @@ ul, li, a, p, hr {
 .resp_nav {
 	display: none;
 	position: absolute;
-	top: 0;
-	right: 0;
+	top: -10px;
+	right: -10px;
 	width: 75%;
 	height: 100vh;
 	background-color: #fff;
@@ -127,6 +130,91 @@ ul, li, a, p, hr {
 	padding: 15px 25px;
 	text-decoration: none;
 	color: #000;
+}
+
+
+/* modal CSS */
+.modal_container {
+	padding: 0 10px;
+}
+.modal_container > a {
+	display: inline-block;
+	margin-right: 15px;
+	margin-bottom: 15px;
+	width: 100%;
+	font-size: 1rem;
+	font-weight: bold;
+	color: rgba(0, 100, 0, 1);
+	text-decoration: none;
+	transition-property: all;
+	transition-duration: 0.3s;
+}
+.modal_container a:hover {
+	color: blue;
+	text-shadow: 0 0 1px rgba(0, 100, 0, 1);
+}
+.modal_container a:last-child {
+	margin-right: 0;
+}
+.waqiya_pg {
+	display: none;
+	position: fixed;
+	top: 90px;
+	left: 0;
+	right: 0;
+	max-width: 1200px;
+	height: 88vh;
+	margin: 0 auto;
+	padding: 25px;
+	border: 0;
+	border-radius: 5px;
+	background-color: #fff;
+	box-shadow: 0 0 20px 0.1px rgba(0, 0, 0,0.5);
+	overflow-x: hidden;
+	overflow-y: auto;
+	scrollbar-width: none;
+	-ms-overflow-style: none;
+	z-index: 10;
+}
+.waqiya_pg::-webkit-scrollbar {
+	display: none;
+}
+.waqiya_pg .waqiya_pg_close {
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	font-size: 2rem;
+	font-weight: 100;
+	color: red;
+	cursor: pointer;
+}
+.waqiya_pg .waqiya_pg_close::selection {
+	background-color: transparent;
+}
+.waqiya_pg .waqiya_pg_close span::selection {
+	background-color: transparent;
+}
+.waqiya_pg p {
+	margin-bottom: 25px;
+	font-size: 1rem;
+	font-weight: 400;
+	line-height: 30px;
+}
+.main .read_more, .main .read_less {
+	width: 150px;
+	margin: 20px auto;
+	padding: 10px 0;
+	border: 0;
+	border-radius: 20px;
+	background-color: coral;
+	color: #fff;
+	font-size: 1rem;
+	font-weight: bold;
+	text-align: center;
+	cursor: pointer;
+}
+.main .read_less {
+	display: none;
 }
 
 
@@ -254,16 +342,37 @@ ul, li, a, p, hr {
 	}
 }
 
-@media only screen and (max-width: 769px) {
+@media only screen and (max-width: 993px) {
+	.mynavigation .logo {
+		top: -9px;
+	}
+}
 
+@media only screen and (max-width: 776px) {
 	.mynavigation .logo {
 		left: 0;
 		margin: 0;
+		width: 30%;
+	}
+}
+
+@media only screen and (max-width: 769px) {
+
+	.mynavigation .logo {
+		top: -12px;
 		width: 38%;
 	}
 	.mynav li {
 		margin-right: 18px;
 		font-size: 0.8rem;
+	}
+
+	.waqiya_pg {
+		top: 73px;
+	}
+	.waqiya_pg p {
+		font-size: 0.8rem;
+		line-height: 25px;
 	}
 	
 }
@@ -273,6 +382,7 @@ ul, li, a, p, hr {
 		padding: 10px;
 	}
 	.mynavigation .logo {
+		top: 0;
 		width: 50%;
 	}
 	.mynav {
@@ -283,6 +393,19 @@ ul, li, a, p, hr {
 		display: block;
 		margin-bottom: 7px;
 		font-size: 0.9rem;
+	}
+
+	.waqiya_pg {
+		top: 63px;
+	}
+	.waqiya_pg p {
+		text-align: justify;
+	}
+	.main .read_more, .main .read_less {
+		width: 100%;
+		padding: 8px 0;
+		border-radius: 0;
+		font-size: 0.8rem;
 	}
 
 	.footer .social_media a {
@@ -309,6 +432,13 @@ ul, li, a, p, hr {
 	}
 
 	.resp_nav {
-		width: 100%;
+		width: 110%;
+	}
+
+	.waqiya_pg {
+		top: 53px;
+	}
+	.modal_container a {
+		font-size: 0.9rem;
 	}
 }
