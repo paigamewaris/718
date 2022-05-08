@@ -253,6 +253,15 @@ ul, li, a, p, hr {
 	font-weight: 400;
 	text-align: center;
 }
+.footer .sec2 p:nth-child(1) {
+	margin-bottom: 10px;
+}
+.footer .sec2 p:nth-child(2) {
+	text-align: right;
+	font-size: 0.65rem;
+	margin-right: 5px;
+	color: grey;
+}
 .footer .sec2 a {
 	color: #494949;
 	text-decoration: none;
@@ -261,12 +270,6 @@ ul, li, a, p, hr {
 }
 .footer .sec2 a:hover {
 	color: #32cf9d;
-}
-.footer .sec2 p:nth-child(2) {
-	text-align: right;
-	font-size: 0.65rem;
-	margin-right: 5px;
-	color: grey;
 }
 
 /* other classes */
@@ -414,6 +417,9 @@ ul, li, a, p, hr {
 	.footer .social_media a:hover {
 		border: unset;
 		color: unset;
+	}
+	.footer .sec2 p:nth-child(2) {
+		text-align: center;
 	}
 	.footer .sec2 a:hover {
 		color: unset;
