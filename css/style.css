@@ -39,7 +39,7 @@ ul, li, a, p, hr {
 }
 .mynavigation .logo {
 	position: absolute;
-	top: -12px;
+	top: -45%;
 	left: 5px;
 	right: 0;
 	margin: 0 auto;
@@ -105,10 +105,10 @@ ul, li, a, p, hr {
 }
 .btn_area {
 	width: 100%;
-	height: 50px;
+	height: 58px;
 	font-size: 1rem;
 	font-weight: 100;
-	padding: 10px;
+	padding: 18px 10px 10px 10px;
 }
 .close {
 	float: right;
@@ -345,11 +345,6 @@ ul, li, a, p, hr {
 	}
 }
 
-@media only screen and (max-width: 993px) {
-	.mynavigation .logo {
-		top: -9px;
-	}
-}
 
 @media only screen and (max-width: 776px) {
 	.mynavigation .logo {
@@ -362,7 +357,7 @@ ul, li, a, p, hr {
 @media only screen and (max-width: 769px) {
 
 	.mynavigation .logo {
-		top: -12px;
+		top: -50%;
 		width: 38%;
 	}
 	.mynav li {
