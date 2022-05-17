@@ -1,3 +1,15 @@
+/* genealogical CSS */
+.modal_container.genealogical_section {
+	height: 130px;
+	overflow: hidden;
+}
+.genealogical_container {
+	padding: 0 10px;
+}
+.genealogical_container p {
+	margin-bottom: 20px;
+}
+
 /* main starts here */
 .main {
 	margin-top: 80px;
@@ -15,15 +27,6 @@
 	letter-spacing: 1px;
 	color: rgba(0, 100, 0, 1);
 	text-shadow: 0 0 5px rgba(0, 100, 0, 0.5);
-}
-
-/* genealogical silsila starts here */
-.genealogical_container > a {
-	font-size: 2rem;
-	font-weight: bold;
-}
-.genealogical_container {
-	padding: 0;
 }
 
 /* quotes CSS starts here */
@@ -142,7 +145,7 @@
 
 
 /* media query */
-@media only screen and (max-width: 769px) {
+@media only screen and (max-width: 768px) {
 
 	.section {
 		padding: 10px 0;
@@ -152,8 +155,9 @@
 		font-size: 1.3rem;
 	}
 
-	.genealogical_container > a {
-		font-size: 1.3rem;
+	.genealogical_container p {
+		margin-bottom: 12px;
+		font-size: 0.8rem;
 	}
 
 	.quates_ul {
@@ -167,7 +171,11 @@
 	
 }
 
-@media only screen and (max-width:481px) {
+@media only screen and (max-width:480px) {
+	.genealogical_container p {
+		margin-bottom: 10px;
+	}
+
 	.quates_ul li span:nth-child(1) {
 		font-size: 1.8rem;
 	}
@@ -183,8 +191,9 @@
 		font-size: 1rem;
 	}
 
-	.genealogical_container > a {
-		font-size: 1rem;
+	.genealogical_container p {
+		margin-bottom: 12px;
+		font-size: 0.65rem;
 	}
 
 	.quates_ul {

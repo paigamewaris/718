@@ -7,44 +7,58 @@ let read_less_btn = document.querySelectorAll(".read_less")
 let modal_container = document.querySelectorAll(".modal_container")
 let quotes_div = document.querySelector(".quotes")
 
-read_more_btn[0].addEventListener('click', open_quotes)
-read_less_btn[0].addEventListener('click', close_quotes)
+read_more_btn[0].addEventListener('click', open_genealogical)
+read_less_btn[0].addEventListener('click', close_genealogical)
 
-read_more_btn[1].addEventListener('click', open_talimat)
-read_less_btn[1].addEventListener('click', close_talimat)
+read_more_btn[1].addEventListener('click', open_quotes)
+read_less_btn[1].addEventListener('click', close_quotes)
 
-read_more_btn[2].addEventListener('click', open_waqiyat)
-read_less_btn[2].addEventListener('click', close_waqiyat)
+read_more_btn[2].addEventListener('click', open_talimat)
+read_less_btn[2].addEventListener('click', close_talimat)
 
-function open_quotes() {
-    quotes_div.style.height = "auto"
+read_more_btn[3].addEventListener('click', open_waqiyat)
+read_less_btn[3].addEventListener('click', close_waqiyat)
+
+function open_genealogical() {
+    modal_container[0].style.height = "auto"
     read_more_btn[0].style.display = "none"
     read_less_btn[0].style.display = "block"
 }
-function open_talimat() {
-    modal_container[1].style.height = "auto"
+function open_quotes() {
+    quotes_div.style.height = "auto"
     read_more_btn[1].style.display = "none"
     read_less_btn[1].style.display = "block"
 }
-function open_waqiyat() {
-    modal_container[2].style.height = "auto"
+function open_talimat() {
+    modal_container[1].style.height = "auto"
     read_more_btn[2].style.display = "none"
     read_less_btn[2].style.display = "block"
 }
-function close_quotes() {
-    quotes_div.style.height = "200px"
+function open_waqiyat() {
+    modal_container[2].style.height = "auto"
+    read_more_btn[3].style.display = "none"
+    read_less_btn[3].style.display = "block"
+}
+
+function close_genealogical() {
+    modal_container[0].style.height = "150px"
     read_less_btn[0].style.display = "none"
     read_more_btn[0].style.display = "block"
 }
-function close_talimat() {
-    modal_container[1].style.height = "150px"
+function close_quotes() {
+    quotes_div.style.height = "200px"
     read_less_btn[1].style.display = "none"
     read_more_btn[1].style.display = "block"
 }
-function close_waqiyat() {
-    modal_container[2].style.height = "150px"
+function close_talimat() {
+    modal_container[1].style.height = "150px"
     read_less_btn[2].style.display = "none"
     read_more_btn[2].style.display = "block"
+}
+function close_waqiyat() {
+    modal_container[2].style.height = "150px"
+    read_less_btn[3].style.display = "none"
+    read_more_btn[3].style.display = "block"
 }
 
 // waqiyat modal JS
