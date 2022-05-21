@@ -1,11 +1,44 @@
+.new_content {
+	margin-top: 73px;
+	padding: 10px;
+	width: 100%;
+	font-size: 0.8rem;
+	font-weight: 400;
+}
+.new_content .common_wrapper {
+	position: relative;
+}
+.new_content .new {
+	position: absolute;
+	top: -4px;
+	left: 0;
+	padding: 5px 10px;
+	border: 0;
+	border-radius: 20px;
+	background-color: cyan;
+	color: #fff;
+}
+.new_content .new_content_link {
+	margin: 0 0 0 70px;
+	padding: 2px 0 0 0;
+
+}
+.new_content .new_content_link a {
+	text-decoration: none;
+	color: rgba(0, 100, 0, 1);
+	transition: letter-spacing 0.4s;
+}
+.new_content .new_content_link a:hover {
+	letter-spacing: 1px;
+}
+
 /* banner starts here */
 .banner {
 	width: 100%;
 	height: 100vh;
-	margin-top: 72px;
 	text-align: center;
 	background: #fff url('../img/img_bg.jpg') no-repeat fixed;
-	background-position: 48% 65px;
+	background-position: 48% 108px;
 	background-size: cover;
 	overflow: auto;
 	scrollbar-width: none;
@@ -116,6 +149,28 @@
 	text-shadow: 0 0 0px rgba(0,0,130,0.5);
 }
 
+/* animations */
+.new_anim {
+	-webkit-animation: new_anim 1s linear 0s;
+	animation: new_anim 1s linear 0s;
+	-webkit-animation-iteration-count: infinite;
+	animation-iteration-count: infinite;
+	-webkit-animation-fill-mode: both;
+	animation-fill-mode: both;
+}
+@keyframes new_anim {
+	0% { background-color: cyan; }
+	10% { background-color: skyblue; }
+	20% { background-color: blueviolet; }
+	30% { background-color: blue; }
+	40% { background-color: purple; }
+	50% { background-color: blue; }
+	60% { background-color: blueviolet; }
+	70% { background-color: skyblue; }
+	80% { background-color: coral; }
+	90% { background-color: red; }
+	100% { background-color: cyan; }
+}
 
 /* for functionality */
 .My_slideInRight{
@@ -159,11 +214,8 @@
 }
 
 /* media query */
-@media only screen and (max-width:1025px) {
+@media only screen and (max-width:1024px) {
 
-	.banner {
-		margin-top: 65px;
-	}
 	.banner .banner_text {
 		margin-top: 27%;
 	}
@@ -179,7 +231,11 @@
 	}
 }
 
-@media only screen and (max-width: 769px) {
+@media only screen and (max-width: 768px) {
+
+	.new_content {
+		margin-top: 70px;
+	}
 
 	.banner .banner_text {
 		margin-top: 35%;
@@ -210,6 +266,10 @@
 }
 
 @media only screen and (max-width:480px) {
+
+	.new_content {
+		margin-top: 63px;
+	}
 
 	.banner {
 		background-position-x: 50%;

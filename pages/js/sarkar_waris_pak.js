@@ -41,7 +41,7 @@ function open_waqiyat() {
 }
 
 function close_genealogical() {
-    modal_container[0].style.height = "150px"
+    modal_container[0].style.height = "130px"
     read_less_btn[0].style.display = "none"
     read_more_btn[0].style.display = "block"
 }
