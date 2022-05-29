@@ -74,6 +74,11 @@
 	margin-bottom: 0 !important;
 }
 
+.modal-open-body {
+	overflow: hidden;
+    padding-right: 0px;
+}
+
 /* for functionality */
 .My_slideOutRight{
 	display: block;

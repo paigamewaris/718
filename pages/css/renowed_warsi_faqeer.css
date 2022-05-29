@@ -97,6 +97,10 @@
 	text-align: center;
 }
 
+.modal-open-body {
+	overflow: hidden;
+    padding-right: 0px;
+}
 
 /* for functionality */
 .My_slideOutRight{
