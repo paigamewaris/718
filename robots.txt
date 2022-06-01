@@ -1,0 +1,6 @@
+# www.robotstxt.org
+# Allow crawling of all content
+User-agent: *
+Disallow:
+Sitemap: https://paigamewaris.github.io/718/sitemap.xml
+Sitemap: https://paigamewaris.github.io/718/image-sitemap.xml
