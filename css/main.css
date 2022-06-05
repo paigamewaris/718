@@ -1,5 +1,5 @@
 .new_content {
-	margin-top: 73px;
+	margin-top: 93px;
 	padding: 10px;
 	width: 100%;
 	font-size: 0.8rem;
@@ -38,7 +38,7 @@
 	height: 100vh;
 	text-align: center;
 	background: #fff url('../img/img_bg.jpg') no-repeat fixed;
-	background-position: 48% 108px;
+	background-position: 48% 120px;
 	background-size: cover;
 	overflow: auto;
 	scrollbar-width: none;
@@ -233,10 +233,6 @@
 
 @media only screen and (max-width: 768px) {
 
-	.new_content {
-		margin-top: 70px;
-	}
-
 	.banner .banner_text {
 		margin-top: 35%;
 	}
@@ -268,11 +264,12 @@
 @media only screen and (max-width:480px) {
 
 	.new_content {
-		margin-top: 63px;
+		margin-top: 110px;
 	}
 
 	.banner {
 		background-position-x: 50%;
+		background-position-y: 138px;
 	}
 	.banner .banner_text {
 		margin-top: 65%;
@@ -316,7 +313,14 @@
 	}
 }
 
-@media only screen and (max-width:321px) {
+@media only screen and (max-width:335px) {
+	.new_content {
+		margin-top: 90px;
+	}
+}
+
+@media only screen and (max-width:320px) {
+
 	.banner .banner_text {
 		margin-top: 87%;
 	}
