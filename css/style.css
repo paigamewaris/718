@@ -404,6 +404,10 @@ ul, li, a, p, hr {
 }
 
 @media only screen and (max-width:480px) {
+
+	.resp_nav {
+		top: -25px;
+	}
 	
 	.mynavigation {
 		padding: 25px 10px;
@@ -469,9 +473,6 @@ ul, li, a, p, hr {
 		top: -15%;
 	}
 
-	.resp_nav {
-		top: -25px;
-	}
 }
 
 @media only screen and (max-width:320px) {
