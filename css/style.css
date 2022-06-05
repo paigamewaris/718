@@ -97,7 +97,7 @@ ul, li, a, p, hr {
 .resp_nav {
 	display: none;
 	position: absolute;
-	top: -25px;
+	top: -35px;
 	right: -10px;
 	width: 75%;
 	height: 100vh;
@@ -273,6 +273,11 @@ ul, li, a, p, hr {
 }
 
 /* other classes */
+.modal-open-body {
+	overflow: hidden;
+    padding-right: 0px;
+}
+
 .common_wrapper {
 	max-width: 1200px;
 	margin: 0 auto;
@@ -400,6 +405,9 @@ ul, li, a, p, hr {
 
 @media only screen and (max-width:480px) {
 	
+	.mynavigation {
+		padding: 25px 10px;
+	}
 	.mynavigation .logo {
 		top: -25%;
 		width: 58%;
@@ -457,11 +465,12 @@ ul, li, a, p, hr {
 
 @media only screen and (max-width:335px) {
 	
-	.mynavigation {
-		padding: 25px 10px;
-	}
 	.mynavigation .logo {
 		top: -15%;
+	}
+
+	.resp_nav {
+		top: -25px;
 	}
 }
 
