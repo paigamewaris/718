@@ -39,11 +39,11 @@ ul, li, a, p, hr {
 }
 .mynavigation .logo {
 	position: absolute;
-	top: -120%;
+	top: -100%;
 	left: 0;
 	right: 0;
 	margin: 0 auto;
-	width: 28%;
+	width: 30%;
 }
 .mynavigation .logo a {
 	width: 100%;
@@ -344,13 +344,13 @@ ul, li, a, p, hr {
 /* media query */
 @media only screen and (max-width:1200px) {
 	.mynavigation .logo {
-		top: -100%;
+		top: -95%;
 		width: 28%;
 	}
 }
-@media only screen and (max-width:1025px) {
+@media only screen and (max-width:1024px) {
 	.mynavigation .logo {
-		top: -120%;
+		top: -90%;
 		width: 30%;
 	}
 
@@ -399,6 +399,7 @@ ul, li, a, p, hr {
 
 @media only screen and (max-width: 520px) {
 	.mynavigation .logo {
+		top: -80%;
 		width: 46%;
 	}
 }
@@ -467,10 +468,10 @@ ul, li, a, p, hr {
 	}
 }
 
-@media only screen and (max-width:335px) {
+@media only screen and (max-width:336px) {
 	
 	.mynavigation .logo {
-		top: -15%;
+		top: -10%;
 	}
 
 }
