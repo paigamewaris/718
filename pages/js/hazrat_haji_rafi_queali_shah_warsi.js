@@ -49,7 +49,7 @@ function close_waqiyat() {
 
 
 // waqiyat modal JS
-let body = document.querySelector("body")
+// let body = document.querySelector("body")
 let waqiyat = document.querySelectorAll(".waqiya")
 let waqiyat_pages = document.querySelectorAll(".waqiya_pg")
 let waqiya_pg_close = document.querySelectorAll(".waqiya_pg_close")
