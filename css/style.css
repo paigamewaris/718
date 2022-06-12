@@ -30,7 +30,7 @@ ul, li, a, p, hr {
 	top: 0;
 	width: 100%;
 	background-color: yellow;
-	padding: 35px 10px;
+	padding: 24px 10px;
 	z-index: 20;
 	box-shadow: 0 1px 3px 1px rgba(0, 128, 0, 0.5);
 }
@@ -39,7 +39,7 @@ ul, li, a, p, hr {
 }
 .mynavigation .logo {
 	position: absolute;
-	top: -100%;
+	top: -90%;
 	left: 0;
 	right: 0;
 	margin: 0 auto;
@@ -342,17 +342,7 @@ ul, li, a, p, hr {
 }
 
 /* media query */
-@media only screen and (max-width:1200px) {
-	.mynavigation .logo {
-		top: -95%;
-		width: 28%;
-	}
-}
 @media only screen and (max-width:1024px) {
-	.mynavigation .logo {
-		top: -90%;
-		width: 30%;
-	}
 
 	.mynav li {
 		margin-right: 28px;
@@ -362,14 +352,19 @@ ul, li, a, p, hr {
 
 @media only screen and (max-width:830px) {
 	.mynavigation .logo {
-		top: -100%;
 		left: 0;
 		margin: 0;
-		width: 35%;
+		width: 38%;
 	}
 }
 
 @media only screen and (max-width: 768px) {
+	.mynavigation {
+		padding: 19px 10px;
+	}
+	.mynavigation .logo {
+		top: -80%;
+	}
 	.mynav li {
 		margin-right: 18px;
 		font-size: 0.8rem;
@@ -392,30 +387,16 @@ ul, li, a, p, hr {
 }
 
 @media only screen and (max-width: 576px) {
-	.mynavigation .logo {
-		width: 45%;
-	}
-}
-
-@media only screen and (max-width: 520px) {
-	.mynavigation .logo {
-		top: -80%;
-		width: 46%;
-	}
-}
-
-@media only screen and (max-width:480px) {
-
 	.resp_nav {
-		top: -25px;
+		top: -12px;
 	}
 	
 	.mynavigation {
-		padding: 25px 10px;
+		padding: 12px 10px;
 	}
 	.mynavigation .logo {
-		top: -25%;
-		width: 58%;
+		top: -8px;
+		width: 323px;
 	}
 	.mynav {
 		display: none;
@@ -455,23 +436,34 @@ ul, li, a, p, hr {
 	}
 }
 
-@media only screen and (max-width:430px) {
+@media only screen and (max-width:420px) {
 	
 	.mynavigation .logo {
-		width: 68%;
+		top: -3px;
+		width: 280px;
+	}
+	
+}
+
+@media only screen and (max-width:375px) {
+	.mynavigation .logo {
+		top: 0px;
+		width: 253px;
+	}
+
+	.menu_btn {
+		font-size: 0.9rem;
 	}
 }
 
-@media only screen and (max-width:378px) {
-	.mynavigation .logo {
-		width: 75%;
-	}
-}
-
-@media only screen and (max-width:336px) {
+@media only screen and (max-width:343px) {
 	
 	.mynavigation .logo {
-		top: -10%;
+		left: -5px;
+	}
+	.menu_btn {
+		font-size: 0.9rem;
+		margin-right: -5px;
 	}
 
 }
@@ -479,11 +471,21 @@ ul, li, a, p, hr {
 @media only screen and (max-width:320px) {
 
 	.menu_btn {
-		font-size: 0.9rem;
-		margin-right: -5px;
+		text-align: center;
+	}
+	.mobile-s {
+		display: block;
+	}
+
+	.mynavigation {
+		padding: 0 10px;
+	}
+	.mynavigation .logo {
+		top: 8px;
 	}
 
 	.resp_nav {
+		top: 0px;
 		width: 110%;
 	}
 
