@@ -39,7 +39,7 @@ ul, li, a, p, hr {
 }
 .mynavigation .logo {
 	position: absolute;
-	top: -90%;
+	top: -108%;
 	left: 0;
 	right: 0;
 	margin: 0 auto;
@@ -344,6 +344,10 @@ ul, li, a, p, hr {
 /* media query */
 @media only screen and (max-width:1024px) {
 
+	.mynavigation .logo {
+		top: -91%;
+	}
+
 	.mynav li {
 		margin-right: 28px;
 		font-size: .8rem;
@@ -352,6 +356,7 @@ ul, li, a, p, hr {
 
 @media only screen and (max-width:830px) {
 	.mynavigation .logo {
+		top: -98%;
 		left: 0;
 		margin: 0;
 		width: 38%;
@@ -361,9 +366,6 @@ ul, li, a, p, hr {
 @media only screen and (max-width: 768px) {
 	.mynavigation {
 		padding: 19px 10px;
-	}
-	.mynavigation .logo {
-		top: -80%;
 	}
 	.mynav li {
 		margin-right: 18px;
@@ -395,7 +397,7 @@ ul, li, a, p, hr {
 		padding: 12px 10px;
 	}
 	.mynavigation .logo {
-		top: -8px;
+		top: -11px;
 		width: 323px;
 	}
 	.mynav {
@@ -445,7 +447,7 @@ ul, li, a, p, hr {
 	
 }
 
-@media only screen and (max-width:375px) {
+@media only screen and (max-width:380px) {
 	.mynavigation .logo {
 		top: 0px;
 		width: 253px;
@@ -456,7 +458,7 @@ ul, li, a, p, hr {
 	}
 }
 
-@media only screen and (max-width:343px) {
+@media only screen and (max-width:345px) {
 	
 	.mynavigation .logo {
 		left: -5px;
@@ -468,8 +470,7 @@ ul, li, a, p, hr {
 
 }
 
-@media only screen and (max-width:320px) {
-
+@media only screen and (max-width:335px) {
 	.menu_btn {
 		text-align: center;
 	}
@@ -481,8 +482,11 @@ ul, li, a, p, hr {
 		padding: 0 10px;
 	}
 	.mynavigation .logo {
-		top: 8px;
+		top: 9px;
 	}
+}
+
+@media only screen and (max-width:320px) {
 
 	.resp_nav {
 		top: 0px;
