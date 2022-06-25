@@ -40,6 +40,9 @@
     <!-- master CSS link here -->
     <link rel="stylesheet" type="text/css" href="css/style.css">
 
+    <!-- search CSS -->
+    <link rel="stylesheet" href="css/search-result.css">
+
     <!-- CSS link here -->
     <link rel="stylesheet" type="text/css" href="css/main.css">
 
@@ -62,6 +65,19 @@
         <div class="menu_btn">
           <span class="fa fa-navicon"></span>
           <span class="mobile-s">&nbsp;Menu</span>
+        </div>
+
+        <div class="search-box">
+          <button name="search-button" data-search-button>
+            <span class="fa fa-search"></span>
+          </button>
+          <input type="search" name="search" id="search">
+          <div class="user-cards" data-user-cards-container>
+            <!-- <div class="card">
+              <div class="header">Name: <a href="#" data-header></a></div>
+              <div class="body">Category: <p data-body></p></div>
+            </div> -->
+          </div>
         </div>
 
         <div class="logo">
@@ -172,6 +188,13 @@
 
   <div class="overlay"></div>
 
+  <!-- search results container -->
+  <template data-user-template>
+    <div class="card">
+      <div class="header">Name: <a href="#" data-header></a></div>
+      <div class="body">Category: <p data-body></p></div>
+    </div>
+  </template>
   </body>
 
 </html>

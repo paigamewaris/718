@@ -37,6 +37,34 @@ ul, li, a, p, hr {
 .mynavigation .common_wrapper {
 	position: relative;
 }
+
+/* search CSS */
+.search-box {
+	position: absolute;
+	top: -10px;
+	left: 0;
+	border: 0;
+	border-radius: 20px;
+	padding: 8px;
+}
+.search-box button {
+	border: 0;
+	background: none;
+	cursor: pointer;
+}
+.search-box button span {
+	font-size: 1rem;
+	color: #fff;
+}
+.search-box input[type="search"] {
+	border: 0;
+	background: none;
+	color: #fff;
+}
+.search-box input[type="search"]:focus {
+	outline: none;
+}
+
 .mynavigation .logo {
 	position: absolute;
 	top: -108%;
