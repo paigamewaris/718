@@ -36,7 +36,7 @@ InputSearch.addEventListener("input", function(e){
 
 })
 
-let userAPI = fetch("https://jsonplaceholder.typicode.com/users")
+let userAPI = fetch("https://paigamewaris.github.io/718/js/ContentData.json")
 
 async function getuserdata() {
     let userdata = await userAPI
