@@ -72,7 +72,7 @@ for(let i = 0; i<=SearchBox.length-1; i++){
                 let header = card.querySelector("[data-header]")
                 let body = card.querySelector("[data-body]")
                 header.textContent = user.ContentName
-                header.setAttribute("href", user.ContentName)
+                header.setAttribute("href", user.ContentUrl)
                 body.textContent = user.ContentCategory
                 userCardContainer[i].append(card)
                 return {
