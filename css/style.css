@@ -15,6 +15,7 @@ html {
 }
 
 body {
+	padding-top: 68px;
 	font-family: 'Roboto Condensed', sans-serif;
 	scroll-behavior: smooth;
 }
@@ -97,7 +98,7 @@ ul, li, a, p, hr {
 	font-size: 1rem;
 	font-weight: 300;
 }
-.mynav li:last-child {
+.mynav li.mr-0 {
 	margin-right: 0;
 }
 .mynav li a {
@@ -108,6 +109,15 @@ ul, li, a, p, hr {
 }
 .mynav li a:hover {
 	color: grey;
+}
+.mynav .search-button-li {
+	display: none;
+}
+.mynav .search-button-li button {
+	border: 0;
+	background: none;
+	font-size: 0.8rem;
+	color: #fff;
 }
 
 .menu_btn {
@@ -301,6 +311,10 @@ ul, li, a, p, hr {
 }
 
 /* other classes */
+.mr-0 {
+	margin-right: 0;
+}
+
 .modal-open-body {
 	overflow: hidden;
     padding-right: 0px;
@@ -389,15 +403,35 @@ ul, li, a, p, hr {
 		margin: 0;
 		width: 38%;
 	}
+
+	.mynav li.mr-0 {
+		margin-right: 40px;
+	}
+
+	.search-box { display: none; }
+	.search-box.search-box-section {
+		display: block;
+	}
+
+	.mynav .search-button-li {
+		display: block;
+	}
 }
 
 @media only screen and (max-width: 768px) {
+	body {
+		padding-top: 58px;
+	}
+
 	.mynavigation {
 		padding: 19px 10px;
 	}
 	.mynav li {
 		margin-right: 18px;
 		font-size: 0.8rem;
+	}
+	.mynav li.mr-0 {
+		margin-right: 18px;
 	}
 
 	.waqiya_pg {
@@ -417,6 +451,9 @@ ul, li, a, p, hr {
 }
 
 @media only screen and (max-width: 576px) {
+	body {
+		padding-top: 65px;
+	}
 	.resp_nav {
 		top: -12px;
 	}
@@ -511,6 +548,12 @@ ul, li, a, p, hr {
 	}
 	.mynavigation .logo {
 		top: 9px;
+	}
+}
+
+@media only screen and (max-width:334px) {
+	body {
+		padding-top: 60px;
 	}
 }
 

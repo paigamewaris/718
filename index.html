@@ -59,7 +59,8 @@
           <li class="active"><a href="#mybody">Home</a></li>
           <li><a href="#content">Content</a></li>
           <li><a href="About.html">About</a></li>
-          <li><a href="Contact.html">Contact</a></li>
+          <li class="mr-0"><a href="Contact.html">Contact</a></li>
+          <li class="search-button-li mr-0"><button data-nav-search-button name="search-button-li"><span class="fa fa-search"></span></button></li>
         </ul>
   
         <div class="menu_btn">
@@ -69,15 +70,10 @@
 
         <div class="search-box">
           <button name="search-button" data-search-button>
-            <span class="fa fa-search"></span>
+            <span class="fa fa-search"></span><area shape="" coords="" href="" alt="">
           </button>
-          <input type="search" name="search" id="search">
-          <div class="user-cards" data-user-cards-container>
-            <!-- <div class="card">
-              <div class="header">Name: <a href="#" data-header></a></div>
-              <div class="body">Category: <p data-body></p></div>
-            </div> -->
-          </div>
+          <input type="search" data-search-input name="search" id="search">
+          <div class="user-cards" data-user-cards-container></div>
         </div>
 
         <div class="logo">
@@ -91,7 +87,8 @@
             <div class="close"><span class="fa fa-close"></span></div>
           </div>
           <div class="nav_pg_1">
-            <ul>
+            <ul class="mobile-navigation-ul">
+              <li><a href="#" class="open-search"><span class="fa fa-search"></span></a></li>
               <li class="active"><a href="#mybody">Home</a></li>
               <li><a href="#content">Content</a></li>
               <li><a href="About.html">About</a></li>
@@ -100,6 +97,17 @@
           </div>
       </div>
     </div>
+  </div>
+
+  <div class="search-section">
+    <div class="search-box search-box-section">
+      <button name="search-button" data-search-button>
+        <span class="fa fa-search"></span><area shape="" coords="" href="" alt="">
+      </button>
+      <input type="search" data-search-input name="search" id="search1">
+      <div class="user-cards" data-user-cards-container></div>
+    </div>
+    <button name="close-search" class="close-search"><span class="fa fa-close"></span></button>
   </div>
 
   <div class="new_content">
