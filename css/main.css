@@ -2,23 +2,24 @@
 	display: none;
 	position: relative;
 	padding: 25px;
+	padding-bottom: 30px;
 	width: 100%;
 	background-color: rgba(0, 0, 0, 0.3);
 	z-index: 1;
 }
 .search-box-section {
-	width: 90%;
 	top: 4px;
 	left: 50%;
+	width: 90%;
+	border: 3px solid rgba(0, 100, 0, 1);
+	border-radius: 25px;
 	-webkit-transform: translateX(-50%);
 	transform: translateX(-50%);
-	outline: 3px solid #fff;
 }
 .search-box-section .user-cards {
 	border: 3px solid #fff;
 	padding: 20px 10px;
 	background-color: #fff;
-	box-shadow: 0 0 8px 3px #fff;
 }
 .search-box-section button,
 .search-box-section input[type="search"] {
@@ -32,12 +33,12 @@
 .search-section .close-search {
 	position: absolute;
 	top: 50%;
-	right: 50px;
+	right: 55px;
 	border: 0;
 	font-size: 1rem;
 	font-weight: 100;
 	background: none;
-	color: #fff;
+	color: rgba(0, 100, 0, 1);
 	transform: translateY(-50%);
 }
 
