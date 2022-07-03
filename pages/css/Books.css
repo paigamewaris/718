@@ -30,6 +30,9 @@
 	text-overflow:ellipsis;
 	overflow: hidden;
 }
+.box .top .h2-fixed-width {
+	max-width: 185px;
+}
 .box .top a {
 	float: right;
 	font-size: 0.68rem;
@@ -37,13 +40,16 @@
 	color: rgba(0, 50, 0, 1);
 }
 .box .thumbnail {
+	aspect-ratio: 345/485;
 	width: 100%;
 	margin-bottom: 5px;
 	border: 0;
 	box-shadow: 0 0 15px 2px rgba(0, 100, 0, 0.5);
 }
 .box .thumbnail img {
-	width: 100%;
+	aspect-ratio: 345/485;
+	max-width: 100%;
+	object-fit: scale-down;
 }
 .box .read_btn {
 	font-size: 0.8rem;

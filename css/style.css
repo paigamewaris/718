@@ -15,7 +15,6 @@ html {
 }
 
 body {
-	padding-top: 68px;
 	font-family: 'Roboto Condensed', sans-serif;
 	scroll-behavior: smooth;
 }
@@ -427,9 +426,6 @@ ul, li, a, p, hr {
 }
 
 @media only screen and (max-width: 768px) {
-	body {
-		padding-top: 58px;
-	}
 
 	.mynavigation {
 		padding: 19px 10px;
@@ -459,9 +455,6 @@ ul, li, a, p, hr {
 }
 
 @media only screen and (max-width: 576px) {
-	body {
-		padding-top: 65px;
-	}
 	.resp_nav {
 		top: -12px;
 	}
@@ -556,12 +549,6 @@ ul, li, a, p, hr {
 	}
 	.mynavigation .logo {
 		top: 9px;
-	}
-}
-
-@media only screen and (max-width:334px) {
-	body {
-		padding-top: 60px;
 	}
 }
 
