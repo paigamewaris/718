@@ -21,18 +21,18 @@ let SearchBox = document.querySelectorAll(".search-box")
 let SearchButton = document.querySelectorAll("[data-search-button]")
 let InputSearch = document.querySelectorAll("[data-search-input]")
 for(let i = 0; i<=SearchBox.length-1; i++){
-    SearchButton[i].addEventListener("click", function(){
-        InputSearch[i].focus()
-    })
+    // SearchButton[i].addEventListener("click", function(){
+    //     InputSearch[i].focus()
+    // })
     
-    InputSearch[i].addEventListener("focus", function(){
-        SearchBox[i].style.outline = "3px solid #fff"
-        SearchBox[i].style.boxShadow = "0 0 8px 3px #fff"
-    })
-    InputSearch[i].addEventListener("blur", function(){
-        SearchBox[i].style.outline = 0
-        SearchBox[i].style.boxShadow = "none"
-    })
+    // InputSearch[i].addEventListener("focus", function(){
+    //     SearchBox[i].style.outline = "3px solid #fff"
+    //     SearchBox[i].style.boxShadow = "0 0 8px 3px #fff"
+    // })
+    // InputSearch[i].addEventListener("blur", function(){
+    //     SearchBox[i].style.outline = 0
+    //     SearchBox[i].style.boxShadow = "none"
+    // })
     
     
     // search function

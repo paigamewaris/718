@@ -21,7 +21,7 @@ input {
 
 .card {
     display: none;
-    border-radius: 20px;
+    border-radius: 18px;
     border: 1px solid #000;
     background-color: #fff;
     padding: .5rem;

@@ -15,7 +15,6 @@ html {
 }
 
 body {
-	padding-top: 68px;
 	font-family: 'Roboto Condensed', sans-serif;
 	scroll-behavior: smooth;
 }
@@ -45,8 +44,10 @@ ul, li, a, p, hr {
 	top: -10px;
 	left: 0;
 	border: 0;
-	border-radius: 20px;
+	border-radius: 18px;
 	padding: 8px;
+	border: 3px solid rgba(0, 100, 0, 1);
+    color: rgba(0, 100, 0, 1);
 }
 .search-box button {
 	border: 0;
@@ -55,12 +56,12 @@ ul, li, a, p, hr {
 }
 .search-box button span {
 	font-size: 1rem;
-	color: #fff;
+	color: rgba(0, 100, 0, 1);
 }
 .search-box input[type="search"] {
 	border: 0;
 	background: none;
-	color: #fff;
+	color: inherit;
 }
 .search-box input[type="search"]:focus {
 	outline: none;
@@ -117,7 +118,7 @@ ul, li, a, p, hr {
 	border: 0;
 	background: none;
 	font-size: 0.8rem;
-	color: #fff;
+	color: rgba(0, 100, 0, 1);
 }
 
 .menu_btn {
@@ -396,12 +397,12 @@ ul, li, a, p, hr {
 	}
 }
 
-@media only screen and (max-width:830px) {
+@media only screen and (max-width:868px) {
 	.mynavigation .logo {
 		top: -98%;
 		left: 0;
 		margin: 0;
-		width: 38%;
+		width: 35%;
 	}
 
 	.mynav li.mr-0 {
@@ -418,10 +419,13 @@ ul, li, a, p, hr {
 	}
 }
 
-@media only screen and (max-width: 768px) {
-	body {
-		padding-top: 58px;
+@media only screen and (max-width:830px) {
+	.mynavigation .logo {
+		width: 38%;
 	}
+}
+
+@media only screen and (max-width: 768px) {
 
 	.mynavigation {
 		padding: 19px 10px;
@@ -451,9 +455,6 @@ ul, li, a, p, hr {
 }
 
 @media only screen and (max-width: 576px) {
-	body {
-		padding-top: 65px;
-	}
 	.resp_nav {
 		top: -12px;
 	}
@@ -548,12 +549,6 @@ ul, li, a, p, hr {
 	}
 	.mynavigation .logo {
 		top: 9px;
-	}
-}
-
-@media only screen and (max-width:334px) {
-	body {
-		padding-top: 60px;
 	}
 }
 
