@@ -19,7 +19,6 @@ menu_btn.addEventListener("click", function(){
 resp_nav_close.addEventListener("click", CloseNav)
 
 resp_nav_a.forEach(function(a) {
-    console.log(a)
     a.addEventListener("click", CloseNav)
 })
 
@@ -30,7 +29,35 @@ function CloseNav() {
 }
 
 
-// footer
-let footerData = `<div class="common_wrapper"> <div class="sec1"> <div class="social_media"> <a href="https://www.facebook.com/paigamewaris/" target="_blank" title="paigamewaris facebook page"> <span class="sr-only">facebook</span> <span class="fa fa-facebook" aria-hidden="true"></span> </a> <a href="https://instagram.com/paigam_e_waris?igshid=w58oscez9zoh" target="_blank" title="paigamewaris instagram page"> <span class="sr-only">instagram</span> <span class="fa fa-instagram" aria-hidden="true"></span> </a> <a href="https://youtube.com/c/PaigameWaris" target="_blank" title="paigamewaris youtube page"> <span class="sr-only">youtube</span> <span class="fa fa-youtube-play" aria-hidden="true"></span> </a> <a href="https://paigamewaris.blogspot.com/2022/03/silsilaye-warsi-books.html" target="_blank" title="paigamewaris blog page"> <span class="sr-only">blog</span> <span class="fa fa-pencil" aria-hidden="true"></span> </a> <a href="mailto:paigamewaris707@gmail.com" target="_blank" title="email to paigamewaris"> <span class="sr-only">email</span> <span class="fa fa-envelope-o" aria-hidden="true"></span> </a> </div></div></div><div class="sec2"> <p><span aria-hidden="true"><span class="sr-only">copyright</span>&copy;</span> 2022 <a href="https://yusuf0786.github.io/paigamewaris/">paigam<span>&#8208;</span>e<span>&#8208;</span>waris</a></p><p>Developed by <a href="mailto:yusssuf0786@gmail.com">Yusuf Ansari</a></p></div>`
-let footerSection = document.querySelector("[data-footer]")
-footerSection.innerHTML = footerData
+// navigation & footer
+
+// $(function(){
+//     $(".footer").load("footer.html")
+// })
+
+/*
+<div class="js-component" data-name="header" data-ext="html"></div>
+<div class="js-component" data-name="footer" data-ext="html"></div>
+
+const components = document.querySelectorAll('.including-using-js')
+
+const loadComponent = async c => {
+    const { name, ext } = c.dataset
+    const response = await fetch(`${name}.${ext}`)
+    const html = await response.text()
+    c.innerHTML = html
+}
+[...components].forEach(loadComponent)*/
+
+
+// <div class="including-using-js" data-content="footer.html"></div>
+const footerSection = document.querySelector('[data-include-footer]')
+const link = footerSection.dataset.content;
+
+fetch(link)
+.then(function (response) {
+        return response.text();
+    })
+     .then(function (html) {
+        footerSection.innerHTML = html;
+    });
