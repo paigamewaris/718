@@ -53,3 +53,8 @@ for(let i = 0; i <= pers_pg_close.length-1; i++) {
         pers_pg_close[i].classList.remove("rotate_anim")
     })
 }
+
+// footer
+$(function(){
+    $(".footer").load("../footer.html")
+})

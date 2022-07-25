@@ -18,3 +18,8 @@ for(let i = 0; i < download_btn.length; i++){
         download_btn[i].classList.remove("download_btn_anim")
     })
 }
+
+// footer
+$(function(){
+    $(".footer").load("../footer.html")
+})

@@ -97,3 +97,8 @@ for(let i = 0; i <= waqiya_pg_close.length-1; i++) {
         waqiya_pg_close[i].classList.remove("rotate_anim")
     })
 }
+
+// footer
+$(function(){
+    $(".footer").load("../footer.html")
+})
