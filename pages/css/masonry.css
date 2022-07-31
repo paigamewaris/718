@@ -7,7 +7,7 @@
     .section-photos { columns: 3; }
 }
 @media only screen and (min-width: 1024px) {
-    .section-photos { columns: 5; }
+    .section-photos { columns: 4; }
 }
 
 .section-photos__box {
@@ -27,8 +27,13 @@
     box-shadow: 0 3px 15px 0px rgba(0,0,0,.5);
 }
 
-.open-btn {
+.open-btn-contianer {
     margin-bottom: 20px;
+    text-align: center;
+}
+.open-btn {
+    display: inline-block;
+    width: auto;
     font-size: 1rem;
     font-weight: bold;
     letter-spacing: 1px;
