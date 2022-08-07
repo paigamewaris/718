@@ -11,6 +11,8 @@
     <!-- icon or logo in the title bar -->
     <link rel = "icon" href = "../img/2nd_header.jpg" type = "image/x-icon">
 
+    <!-- jQuery link -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <!-- my JS -->
     <script src="../js/navigation.js" defer></script>
     <script src="js/hazrat_haji_rafi_queali_shah_warsi.js" defer></script>
@@ -23,6 +25,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lobster+Two&display=swap" rel="stylesheet">
     
+
+    <!-- masonry CSS link here -->
+    <link rel="stylesheet" href="css/masonry.css">
     <!-- master CSS link here -->
     <link rel="stylesheet" type="text/css" href="../css/style.css">
 
@@ -85,7 +90,7 @@
       <div class="read_less">Read Less</div>
 
       <div class="section quotes">
-        <h1>Aqwal</h1>
+        <h3>Aqwal</h3>
         <ul class="quates_ul">
           <!-- aqwal starts here -->
 
@@ -104,7 +109,7 @@
       <div class="read_less">Read Less</div>
 
       <div class="section waqiyat">
-        <h1>Waqiyat</h1>
+        <h3>Waqiyat</h3>
 
         <div class="waqiyat_container modal_container">
 
@@ -129,8 +134,9 @@
       <div class="read_more">Read More</div>
       <div class="read_less">Read Less</div>
       
+      <!-- bayan section -->
       <div class="section bayan">
-        <h1>Bayanat</h1>
+        <h3>Bayanat</h3>
         <div class="bayan_alignment">
           <iframe src="https://www.youtube.com/embed/MMpeb1xE70U" allowfullscreen title="bayan_one" id="bayan_1"></iframe>
           <iframe src="https://www.youtube.com/embed/EYz6E3LluEg" allowfullscreen title="bayan_two" id="bayan_2"></iframe>
@@ -147,42 +153,46 @@
           <div class="mycontrols next"><span class="fa fa-angle-double-right"></span></div>
         </div>
       </div>
-      
-    </div>
-  </div>
 
-  <div class="footer">
-    <div class="common_wrapper">
-      <div class="sec1">
-        <div class="social_media">
-          <a href="https://youtube.com/c/PaigameWaris" target="_blank" title="paigamewaris youtube page">
-            <span class="sr-only">youtube</span>
-            <span class="fa fa-youtube-play" aria-hidden="true"></span>
-          </a>
-          <a href="https://instagram.com/paigam_e_waris?igshid=w58oscez9zoh" target="_blank" title="paigamewaris instagram page">
-            <span class="sr-only">instagram</span>
-            <span class="fa fa-instagram" aria-hidden="true"></span>
-          </a>
-          <a href="https://paigamewaris.blogspot.com/2022/03/silsilaye-warsi-books.html" target="_blank" title="paigamewaris blog page">
-            <span class="sr-only">blog</span>
-            <span class="fa fa-pencil" aria-hidden="true"></span>
-          </a>
-          <a href="mailto:paigamewaris707@gmail.com" target="_blank" title="email to paigamewaris">
-            <span class="sr-only">email</span>
-            <span class="fa fa-envelope-o" aria-hidden="true"></span>
-          </a>
+      <!-- photos section -->
+      <div class="section">
+        <h3>Photos</h3>
+
+        <div class="open-btn-contianer">
+          <a href="masonry.html" class="open-btn" title="Go to Image Gallary">Open Image Gallary</a>
         </div>
-      </div>
-    </div>
-    <div class="sec2">
-      <p><span aria-hidden="true"><span class="sr-only">copyright</span>&copy;</span> 2022 <a href="https://yusuf0786.github.io/paigamewaris/">paigam<span>&#8208;</span>e<span>&#8208;</span>waris</a></p>
-      <p>Developed by <a href="mailto:yusssuf0786@gmail.com">Yusuf Ansari</a></p>
-    </div>
+        
+        <div class="section-photos">
+
+          <!-- image box -->
+          <div class="section-photos__box">
+            <img loading="lazy" src="img/masonry/1.jpg" alt="paigamewaris masonry image 1">
+          </div> <!-- image box ends -->
+
+          <!-- image box -->
+          <div class="section-photos__box">
+            <img loading="lazy" src="img/masonry/2.jpg" alt="paigamewaris masonry image 1">
+          </div> <!-- image box ends -->
+
+          <!-- image box -->
+          <div class="section-photos__box">
+            <img loading="lazy" src="img/masonry/3.jpg" alt="paigamewaris masonry image 1">
+          </div> <!-- image box ends -->
+
+          <!-- image box -->
+          <div class="section-photos__box">
+            <img loading="lazy" src="img/masonry/4.jpg" alt="paigamewaris masonry image 1">
+          </div> <!-- image box ends -->
+
+        </div> <!-- sections-photos ends -->
+
+      </div> <!-- photos section ends -->
+    </div> <!-- common wrapper ends -->
   </div>
 
+  <div class="footer"></div>
 
-    <div class="overlay"></div>
+  <div class="overlay"></div>
     
   </body>
-
 </html>

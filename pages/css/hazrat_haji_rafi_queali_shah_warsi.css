@@ -8,7 +8,7 @@
 .section {
 	padding: 20px 0;
 }
-.section h1 {
+.section h3 {
 	margin-bottom: 20px;
 	font-size: 2rem;
 	font-weight: bold;
@@ -195,7 +195,7 @@
 	.section {
 		padding: 10px 0;
 	}
-	.section h1 {
+	.section h3 {
 		margin-bottom: 10px;
 		font-size: 1.3rem;
 	}
@@ -234,7 +234,7 @@
 		margin-top: 50px;
 	}
 
-	.section h1 {
+	.section h3 {
 		font-size: 1rem;
 	}
 

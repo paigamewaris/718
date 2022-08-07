@@ -20,3 +20,8 @@ function close_resp_nav() {
     overlay.style.display = "none"
 }
 /* JS for navigation ends here */
+
+// footer
+$(function(){
+    $(".footer").load("../footer.html")
+})

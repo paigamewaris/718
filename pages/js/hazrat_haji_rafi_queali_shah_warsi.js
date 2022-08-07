@@ -97,3 +97,8 @@ scroll_left.addEventListener('click', function(){
 scroll_right.addEventListener('click', function(){
     bayan_div.scrollBy(280, 0)
 })
+
+// footer
+$(function(){
+    $(".footer").load("../footer.html")
+})
