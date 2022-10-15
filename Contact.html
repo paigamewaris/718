@@ -6,13 +6,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <title>Pagam E Waris</title>
+    <title>Paigam E Waris - Contact</title>
 
     <!-- icon or logo in the title bar -->
     <link rel = "icon" href = "img/2nd_header.jpg" type = "image/x-icon">
 
     <!-- my JS -->
     <script src="js/navigation.js" defer></script>
+
+    <script src="js/main.js" defer></script>
 
     <!-- fontawesome link here -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -22,22 +24,19 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Lobster+Two&display=swap" rel="stylesheet">
-
-    <!-- jQuery link here -->
-    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
-    
-    <!-- Bootstrap -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     
     <!-- master CSS link here -->
     <link rel="stylesheet" type="text/css" href="css/style.css">
 
-    <!-- CSS link here -->
-    <link rel="stylesheet" type="text/css" href="css/Contact.css">
+    <!-- search CSS -->
+    <link rel="stylesheet" href="css/search-result.css">
 
+    <!-- CSS link here -->
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    
   </head>
 
-  <body id="mybody">
+  <body id="mybody" class="contact-body">
     <div class="mynavigation">
       <div class="common_wrapper clearfix">
 
@@ -45,15 +44,26 @@
           <li><a href="index.html">Home</a></li>
           <li><a href="index.html#content">Content</a></li>
           <li><a href="About.html">About</a></li>
-          <li class="active"><a href="Contact.html">Contact</a></li>
+          <li class="mr-0 active"><a href="#mybody">Contact</a></li>
         </ul>
   
-        <div class="menu_btn"><span class="fa fa-navicon"></span>&nbsp;Menu</div>
+        <div class="menu_btn">
+          <span class="fa fa-navicon"></span>
+          <span class="mobile-s">&nbsp;Menu</span>
+        </div>
+
+        <div class="search-box">
+          <button name="search-button" data-search-button>
+            <span class="fa fa-search"></span><area shape="" coords="" href="" alt="">
+          </button>
+          <input type="search" data-search-input name="search" id="search">
+          <div class="user-cards" data-user-cards-container></div>
+        </div>
 
         <div class="logo">
-          <a href="#" id="logo">
-            <div class="img"><img src="img/paigamewaris_logo.png" alt="logo"></div>
-          </a>
+          <div id="logo">
+            <div class="img"><img src="img/paigamewaris_logo.png" alt="paigamewaris logo"></div>
+          </div>
         </div>
   
         <div class="resp_nav">
@@ -61,27 +71,40 @@
             <div class="close"><span class="fa fa-close"></span></div>
           </div>
           <div class="nav_pg_1">
-            <ul>
-              <li><a href="index.html">Home</a></li>
-              <li><a href="index.html#content">Content</a></li>
+            <ul class="mobile-navigation-ul">
+              <li><a href="#" class="open-search"><span class="fa fa-search"></span></a></li>
+              <li class="active"><a href="#mybody">Home</a></li>
+              <li><a href="#content">Content</a></li>
               <li><a href="About.html">About</a></li>
-              <li class="active"><a href="Contact.html">Contact</a></li>
+              <li><a href="Contact.html">Contact</a></li>
             </ul>
           </div>
       </div>
     </div>
   </div>
 
-  
+  <div class="main contact-main">
+    <div class="common_wrapper">
+      <div class="section">
+        <h3><span class="fa fa-map-marker"></span> <span>Address</span></h3>
+        <p>Khanqah Warsiya</p>
+        <p>Barkat Ali Dargah,</p>
+        <p>Antop Hill, Wadala 400037.</p>
+      </div>
 
-  <div class="footer" data-footer></div>
+      <div class="section">
+        <h3><span class="fa fa-envelope"></span> <span>Connect With Us</span></h3>
+        <a href="mailto:paigamewaris707@gmail.com" title="mail to paigamewaris707@gmail.com">paigamewaris707@gmail.com</a>
+      </div>
+    </div>
+  </div>
 
 
-    <div class="overlay"></div>
+  <div class="footer contact-footer" data-content="footer.html" data-include-footer></div>
 
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+  <div class="overlay"></div>
+
   </body>
 
 </html>

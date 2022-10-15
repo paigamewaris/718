@@ -84,7 +84,7 @@
 	height: 100vh;
 	text-align: center;
 	background: #fff url('../img/img_bg.jpg') no-repeat fixed;
-	background-position: 48% 120px;
+	background-position: 48% 72px;
 	background-size: cover;
 	overflow: auto;
 	scrollbar-width: none;
@@ -262,6 +262,8 @@
 /* media query */
 @media only screen and (max-width:1024px) {
 
+	.banner { background-position: 48% 65px; }
+
 	.banner .banner_text {
 		margin-top: 27%;
 	}
@@ -313,10 +315,7 @@
 }
 
 @media only screen and (max-width:480px) {
-	.banner {
-		background-position-x: 50%;
-		background-position-y: 138px;
-	}
+	.banner { background-position-x: 50%; }
 	.banner .banner_text {
 		margin-top: 65%;
 	}
@@ -366,6 +365,7 @@
 	}
 	.banner {
 		background-position-x: 51%;
+		background-position-y: 60px;
 	}
 	.banner_text h1 {
 		font-size: 1.5rem;
