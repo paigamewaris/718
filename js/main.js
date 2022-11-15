@@ -1,5 +1,5 @@
 let new_badge = document.querySelector("[data-new-badge]")
-new_badge.classList.add("new_anim")
+// new_badge.classList.add("new_anim")
 
 // 
 let NavSearchButton = document.querySelector("[data-nav-search-button]")
