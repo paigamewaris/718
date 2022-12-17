@@ -357,7 +357,7 @@ ul, li, a, p, hr {
 
 .modal-open-body {
 	overflow: hidden;
-    padding-right: 0px;
+    padding-right: 17px;
 }
 
 .common_wrapper {
@@ -491,6 +491,10 @@ ul, li, a, p, hr {
 	}
 	.contact-main .section p,
 	.contact-main .section a { font-size: 0.8rem; }
+
+	.modal-open-body {
+		padding-right: 0;
+	}
 	
 }
 

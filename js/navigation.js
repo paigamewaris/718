@@ -51,6 +51,7 @@ const loadComponent = async c => {
 
 
 // <div class="including-using-js" data-content="footer.html"></div>
+/*
 const footerSection = document.querySelector('[data-include-footer]')
 const link = footerSection.dataset.content;
 
@@ -61,3 +62,4 @@ fetch(link)
      .then(function (html) {
         footerSection.innerHTML = html;
     });
+*/

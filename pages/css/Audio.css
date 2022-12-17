@@ -1,0 +1,145 @@
+.mynavigation .logo {
+	top: -56%;
+}
+
+
+/* main starts here */
+.main {
+	margin-top: 80px;
+	padding: 20px 10px;
+}
+
+/* section CSS */
+.section {
+	padding: 20px 0;
+}
+.section h1 {
+	margin-bottom: 20px;
+	font-size: 2rem;
+	font-weight: bold;
+	letter-spacing: 1px;
+	color: rgba(0, 100, 0, 1);
+	text-shadow: 0 0 5px rgba(0, 100, 0, 0.5);
+}
+
+/* waqiyat CSS starts here */
+.main .waqiyat {
+	width: 100%;
+	overflow: hidden;
+}
+
+
+/* other CSS */
+.mb-0 {
+	margin-bottom: 0 !important;
+}
+
+/* for functionality */
+.My_slideOutRight{
+	display: block;
+	-webkit-animation: resp_nav_anim2 0.5s linear 0s;
+	animation: resp_nav_anim2 0.5s linear 0s;
+	-webkit-animation-fill-mode: both;
+	animation-fill-mode: both;
+}
+@keyframes resp_nav_anim2 {
+	0% {
+		opacity: 1;
+		-webkit-transform: translate(0, 0);
+		transform: translate(0, 0);
+	}
+	100% {
+		opacity: 0;
+		-webkit-transform: translate(100%, 0);
+		transform: translate(100%, 0);
+	}
+}
+
+.rotate_anim {
+	-webkit-animation: rotate_anim 0.5s linear 0s;
+	animation: rotate_anim 0.5s linear 0s;
+	-webkit-animation-iteration-count: infinite;
+	animation-iteration-count: infinite;
+	-webkit-animation-fill-mode: both;
+	animation-fill-mode: both;
+}
+ @keyframes rotate_anim {
+	0% {
+		-webkit-transform: rotate(0deg) scale(1);
+		transform: rotate(0deg) scale(1);
+	}
+	100% {
+		-webkit-transform: rotate(360deg) scale(1.1);
+		transform: rotate(360deg) scale(1.1);
+	}
+ }
+
+.modal_show_anim {
+	-webkit-animation: modal_show_anim 0.5s linear 0s;
+	animation: modal_show_anim 0.5s linear 0s;
+	-webkit-animation-fill-mode: both;
+	animation-fill-mode: both;
+}
+@keyframes modal_show_anim {
+	0% {
+		opacity: 0.5;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+.modal_hide_anim {
+	-webkit-animation: modal_hide_anim 0.5s linear 0s;
+	animation: modal_hide_anim 0.5s linear 0s;
+	-webkit-animation-fill-mode: both;
+	animation-fill-mode: both;
+}
+@keyframes modal_hide_anim {
+	0% {
+		opacity: 1;
+	}
+	100% {
+		opacity: 0;
+	}
+}
+
+
+/* media query */
+@media only screen and (max-width: 768px) {
+
+	.section {
+		padding: 10px 0;
+	}
+	.section h1 {
+		margin-bottom: 10px;
+		font-size: 1.3rem;
+	}
+	
+}
+
+@media only screen and (max-width:480px) {
+	.mynavigation .logo {
+		top: -12%;
+	}
+}
+
+@media only screen and (max-width:380px) {
+	.mynavigation .logo {
+		top: 12%;
+	}
+}
+
+@media only screen and (max-width:320px) {
+	.mynavigation .logo {
+		top: 0;
+		width: 223px;
+	}
+
+	.main {
+		margin-top: 50px;
+	}
+
+	.section h1 {
+		font-size: 1rem;
+	}
+}
