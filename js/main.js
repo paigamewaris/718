@@ -83,3 +83,10 @@ for(let i = 0; i<=SearchBox.length-1; i++){
         });
     })
 }
+
+// footer
+$.ajax({url: "../footer.html",
+    success: function(result) {
+        $(".footer").html(result)
+    }
+})
