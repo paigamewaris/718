@@ -10,7 +10,10 @@
 	padding: 0;
 }
 
-html { font-size: 20px; }
+html {
+	font-size: 20px;
+	scroll-behavior: smooth;
+}
 
 body {
 	font-family: 'Roboto Condensed', sans-serif;
@@ -422,6 +425,25 @@ ul, li, a, p, hr {
 		transform: translate(100%, 0);
 	}
 }
+
+.rotate_anim {
+	-webkit-animation: rotate_anim 0.8s linear 0s;
+	animation: rotate_anim 0.8s linear 0s;
+	-webkit-animation-iteration-count: infinite;
+	animation-iteration-count: infinite;
+	-webkit-animation-fill-mode: both;
+	animation-fill-mode: both;
+}
+ @keyframes rotate_anim {
+	0% {
+		-webkit-transform: rotate(0deg) scale(1);
+		transform: rotate(0deg) scale(1);
+	}
+	100% {
+		-webkit-transform: rotate(360deg) scale(1.1);
+		transform: rotate(360deg) scale(1.1);
+	}
+ }
 
 /* media query */
 @media only screen and (max-width:1024px) {

@@ -54,9 +54,9 @@ function close_waqiyat() {
 
 // waqiyat modal JS
 // let body = document.querySelector("body")
-let waqiyat = document.querySelectorAll(".waqiya")
-let waqiyat_pages = document.querySelectorAll(".waqiya_pg")
-let waqiya_pg_close = document.querySelectorAll(".waqiya_pg_close")
+let waqiyat = document.querySelectorAll(".kalam")
+let waqiyat_pages = document.querySelectorAll(".kalam_pg")
+let waqiya_pg_close = document.querySelectorAll(".kalam_pg_close")
 
 // for modal open
 for(let i = 0; i <= waqiyat.length-1; i++){

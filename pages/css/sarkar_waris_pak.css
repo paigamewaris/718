@@ -99,25 +99,6 @@
 	}
 }
 
-.rotate_anim {
-	-webkit-animation: rotate_anim 0.5s linear 0s;
-	animation: rotate_anim 0.5s linear 0s;
-	-webkit-animation-iteration-count: infinite;
-	animation-iteration-count: infinite;
-	-webkit-animation-fill-mode: both;
-	animation-fill-mode: both;
-}
- @keyframes rotate_anim {
-	0% {
-		-webkit-transform: rotate(0deg) scale(1);
-		transform: rotate(0deg) scale(1);
-	}
-	100% {
-		-webkit-transform: rotate(360deg) scale(1.1);
-		transform: rotate(360deg) scale(1.1);
-	}
- }
-
 .modal_show_anim {
 	-webkit-animation: modal_show_anim 0.5s linear 0s;
 	animation: modal_show_anim 0.5s linear 0s;

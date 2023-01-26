@@ -22,10 +22,84 @@
 	text-shadow: 0 0 5px rgba(0, 100, 0, 0.5);
 }
 
-/* waqiyat CSS starts here */
-.main .waqiyat {
+/* kalamat CSS starts here */
+.main .kalamt {
 	width: 100%;
 	overflow: hidden;
+}
+
+
+
+.kalam_pg {
+	display: none;
+	position: fixed;
+	top: 90px;
+	left: 0;
+	right: 0;
+	max-width: 1200px;
+	height: 88vh;
+	margin: 0 auto;
+	padding: 25px;
+	border: 0;
+	border-radius: 5px;
+	background-color: #fff;
+	box-shadow: 0 0 20px 0.1px rgba(0, 0, 0,0.5);
+	overflow-x: hidden;
+	overflow-y: auto;
+	scrollbar-width: none;
+	-ms-overflow-style: none;
+	z-index: 10;
+}
+.kalam_pg::-webkit-scrollbar {
+	display: none;
+}
+.kalam_pg .kalam_pg_close {
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	font-size: 2rem;
+	font-weight: 100;
+	color: red;
+	cursor: pointer;
+}
+.kalam_pg .kalam_pg_close::selection {
+	background-color: transparent;
+}
+.kalam_pg .kalam_pg_close span::selection {
+	background-color: transparent;
+}
+.kalam_pg p {
+	margin-bottom: 25px;
+	font-size: 1rem;
+	font-weight: 400;
+	line-height: 30px;
+}
+
+/* quates ul CSS */
+.kalam_pg_quates_ul {
+	margin-bottom: 25px;
+	padding: 0 10px;
+	width: 100%;
+	list-style: none;
+	font-family: 'Lobster Two', cursive;
+	font-size: 1rem;
+	letter-spacing: 2px;
+}
+.kalam_pg_quates_ul:last-child {
+	margin-bottom: 0;
+}
+.kalam_pg_quates_ul li span {
+	display: inline-block;
+	vertical-align: top;
+}
+.kalam_pg_quates_ul li span:nth-child(1) {
+	width: 1.4%;
+	font-size: 2rem;
+}
+.kalam_pg_quates_ul li span:nth-child(2) {
+	margin-top: 18px;
+	padding-left: 8px;
+	width: 98%;
 }
 
 
@@ -54,25 +128,6 @@
 		transform: translate(100%, 0);
 	}
 }
-
-.rotate_anim {
-	-webkit-animation: rotate_anim 0.5s linear 0s;
-	animation: rotate_anim 0.5s linear 0s;
-	-webkit-animation-iteration-count: infinite;
-	animation-iteration-count: infinite;
-	-webkit-animation-fill-mode: both;
-	animation-fill-mode: both;
-}
- @keyframes rotate_anim {
-	0% {
-		-webkit-transform: rotate(0deg) scale(1);
-		transform: rotate(0deg) scale(1);
-	}
-	100% {
-		-webkit-transform: rotate(360deg) scale(1.1);
-		transform: rotate(360deg) scale(1.1);
-	}
- }
 
 .modal_show_anim {
 	-webkit-animation: modal_show_anim 0.5s linear 0s;
