@@ -23,15 +23,13 @@
 }
 .box .top h2 {
 	float: left;
+	max-width: 185px;
 	margin-bottom: 5px;
 	font-size: 0.63rem;
 	font-weight: bold;
 	white-space: nowrap;
 	text-overflow:ellipsis;
 	overflow: hidden;
-}
-.box .top .h2-fixed-width {
-	max-width: 185px;
 }
 .box .top a {
 	float: right;
