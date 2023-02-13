@@ -196,6 +196,15 @@
       <div class="body">Category: <span data-body></span></div>
     </div>
   </template>
+
+  <script>
+    // footer
+    $.ajax({url: "./footer.html",
+        success: function(result) {
+            $(".footer").html(result)
+        }
+    })
+  </script>
   </body>
 
 </html>
