@@ -16,16 +16,35 @@ let body = document.querySelector("body")
 let photosBoxImage = document.querySelectorAll("[data-img]")
 let photosBoxClose = document.querySelectorAll("[data-photos-box-close]")
 
-photosBoxImage.forEach( photoboxImage => {
+photosBoxImage.forEach( (photoboxImage, i) => {
     photoboxImage.addEventListener('click', function(){
+        
         this.parentElement.classList.add("masonry-img-show");
         body.classList.add("body-modal-open")
+  
+        window.history.pushState(String(this.parentElement), "Modal title", document.location+'#modal');
+
+        window.addEventListener('popstate', function(e) {
+            photosBoxImage[i].parentElement.classList.remove("masonry-img-show");
+            body.classList.remove("body-modal-open")
+        }, false);
+        
+        setTimeout(() => {
+            photosBoxImage[i].parentElement.focus();
+        }, 1);
+        
     })
 })
 
-photosBoxClose.forEach( photoboxClose => {
+photosBoxClose.forEach( (photoboxClose, i) => {
     photoboxClose.addEventListener('click', function(){
-        this.parentElement.classList.remove("masonry-img-show");
-        body.classList.remove("body-modal-open")
+        if ( window.history.state === String(photosBoxImage[i].parentElement) ) {
+            history.go(-1);
+        }
+          
+        window.removeEventListener('popstate', function(e){
+            photosBoxImage[i].parentElement.classList.remove("masonry-img-show");
+            body.classList.remove("body-modal-open")
+        });
     })
 } )
