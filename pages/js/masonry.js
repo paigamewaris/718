@@ -2,7 +2,8 @@
 let sectionPhotos = document.querySelector("[data-photos]")
 let count = sectionPhotos.dataset.photos
 let dataSectionPhotosContainer = document.querySelector("[data-section-photos-container]")
-    
+
+var windowLocationPathname = window.location.pathname
 
 for(let i = 0; i <= count - 1; i++){
     let codeSnipit = dataSectionPhotosContainer.content.cloneNode(true).children[0]

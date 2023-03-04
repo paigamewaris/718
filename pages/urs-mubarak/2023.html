@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Paigam E Waris - Urs Mubarak</title>
+
+    <!-- icon or logo in the title bar -->
+    <link rel = "icon" href = "../../img/2nd_header.jpg" type = "image/x-icon">
+
+    <!-- jQuery link -->
+    <script src="../js/masonry.js" defer></script>
+
+    <!-- masonry CSS link -->
+    <link rel="stylesheet" href="../css/masonry.css">
+
+    <style>
+        .section h3 {
+            margin-bottom: 20px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 2rem;
+            font-weight: bold;
+            letter-spacing: 1px;
+            color: rgba(0, 100, 0, 1);
+            text-shadow: 0 0 5px rgba(0, 100, 0, 0.5);
+        }
+
+        @media only screen and (max-width: 768px) {
+            .section h1 {
+                margin-bottom: 10px;
+                font-size: 1.3rem;
+            }
+        }
+
+        @media only screen and (max-width:320px) {
+            .section h1 { font-size: 1rem; }
+        }
+    </style>
+
+</head>
+<body>
+    
+    <div class="common-wrapper">
+        <!-- photos section -->
+        <div class="section">
+            <h3>Photos</h3>
+            <div class="section-photos" data-photos="8">
+            
+                <template data-section-photos-container>
+                    <!-- image box -->
+                    <div class="section-photos__box">
+                        <img loading="lazy" src="img/masonry/1.jpg" data-img alt="paigamewaris urs mubarak image 1">
+                        <button class="close" type="button" role="button" name="close" data-photos-box-close><span>&#10005;</span></button>
+                    </div> <!-- image box ends -->
+                </template>
+
+            </div> <!-- sections-photos ends -->
+        </div> <!-- photos section ends -->
+    </div>
+
+</body>
+</html>

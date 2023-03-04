@@ -196,6 +196,17 @@ ul, li, a, p, hr {
 .modal_container a:last-child {
 	margin-right: 0;
 }
+.urs-mubarak-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.urs-mubarak-container > a.urs-mubarak-link {
+	display: inline-block;
+	width: auto;
+	margin-left: 8px;
+	margin-right: 8px;
+}
 .waqiya_pg {
 	display: none;
 	position: fixed;
