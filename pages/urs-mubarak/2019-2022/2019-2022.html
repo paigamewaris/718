@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Paigam E Waris - Urs Mubarak</title>
+    <title>Paigam E Waris - Urs Mubarak 2019 - 2022</title>
 
     <!-- icon or logo in the title bar -->
     <link rel = "icon" href = "../../../img/2nd_header.jpg" type = "image/x-icon">
@@ -95,9 +95,9 @@
                     let newPath = el_url_encoded
                     codeSnipit.firstElementChild.src = `img/${newPath}`
                     sectionPhotos.append(codeSnipit)
-                    modalOpenClose()
                 } else{   console.log(el_url_encoded + " already in!"); }
             });
+            modalOpenClose()
         },
         error: function(xhr, textStatus, err) {
         alert('Error: here we go...');
