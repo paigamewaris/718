@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Paigam E Waris - Urs Mubarak</title>
+
+    <!-- icon or logo in the title bar -->
+    <link rel = "icon" href = "../../../img/2nd_header.jpg" type = "image/x-icon">
+
+    <!-- jQuery link -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <!-- masonry CSS link -->
+    <link rel="stylesheet" href="../../css/masonry.css">
+
+    <style>
+        .section h3 {
+            margin-bottom: 20px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 2rem;
+            font-weight: bold;
+            letter-spacing: 1px;
+            color: rgba(0, 100, 0, 1);
+            text-shadow: 0 0 5px rgba(0, 100, 0, 0.5);
+        }
+
+        @media only screen and (max-width: 768px) {
+            .section h1 {
+                margin-bottom: 10px;
+                font-size: 1.3rem;
+            }
+        }
+
+        @media only screen and (max-width:320px) {
+            .section h1 { font-size: 1rem; }
+        }
+    </style>
+
+</head>
+<body>
+    
+    <div class="common-wrapper">
+        <!-- photos section -->
+        <div class="section">
+            <h3>Photos</h3>
+            <div class="section-photos" data-photos="8">
+            
+                <template data-section-photos-container>
+                    <!-- image box -->
+                    <div class="section-photos__box">
+                        <img loading="lazy" src="img/masonry/1.jpg" data-img alt="paigamewaris urs mubarak image 1">
+                        <button class="close" type="button" role="button" name="close" data-photos-box-close><span>&#10005;</span></button>
+                    </div> <!-- image box ends -->
+                </template>
+
+            </div> <!-- sections-photos ends -->
+        </div> <!-- photos section ends -->
+    </div>
+
+    <script>
+    // below function automatically takes section-photo__box equal to data-photos count
+    let sectionPhotos = document.querySelector("[data-photos]")
+    let count = sectionPhotos.dataset.photos
+    let dataSectionPhotosContainer = document.querySelector("[data-section-photos-container]")
+
+    // for(let i = 0; i <= count - 1; i++){
+    //     let codeSnipit = dataSectionPhotosContainer.content.cloneNode(true).children[0]
+    //     let newPath = `img/${i+1}.jpg`
+    //     codeSnipit.firstElementChild.src = newPath
+    //     sectionPhotos.append(codeSnipit)
+    // }
+    
+    var codeSnipit = dataSectionPhotosContainer.content.cloneNode(true).children[0]
+    var windowLocationPathname = window.location.pathname
+
+    var folder = "img/";
+
+    $.ajax({
+        url : folder,
+        success: function (data) {
+            var patt1 = /"([^"]*\.(jpe?g|png|gif))"/gi;     // extract "*.jpeg" or "*.jpg" or "*.png" or "*.gif"
+            var result = data.match(patt1);
+            result = result.map(function(el) { return el.replace(/"/g, ""); });     // remove double quotes (") surrounding filename+extension // TODO: do this at regex!
+
+            var uniqueNames = [];                               // this array will help to remove duplicate images
+            $.each(result, function(i, el){
+                var el_url_encoded = encodeURIComponent(el);    // avoid images with same name but converted to URL encoded
+                console.log("under analysis: " + el);
+                if($.inArray(el, uniqueNames) === -1  &&  $.inArray(el_url_encoded, uniqueNames) === -1){
+                    console.log("adding " + el_url_encoded);
+                    uniqueNames.push(el_url_encoded);
+                    let newPath = el_url_encoded
+                    codeSnipit.firstElementChild.src = `img/${newPath}`
+                    sectionPhotos.append(codeSnipit)
+                    modalOpenClose()
+                } else{   console.log(el_url_encoded + " already in!"); }
+            });
+        },
+        error: function(xhr, textStatus, err) {
+        alert('Error: here we go...');
+        alert(textStatus);
+        alert(err);
+        alert("readyState: "+xhr.readyState+"\n xhrStatus: "+xhr.status);
+        alert("responseText: "+xhr.responseText);
+    }
+    });
+
+    function modalOpenClose() {
+        // image open & close functions
+        let body = document.body
+        let photosBoxImage = document.querySelectorAll("[data-img]")
+        let photosBoxClose = document.querySelectorAll("[data-photos-box-close]")
+        
+        // below code is for modal to close on back button
+        photosBoxImage.forEach( (photoboxImage, i) => {
+            photoboxImage.addEventListener('click', function(){
+
+                
+                this.parentElement.classList.add("masonry-img-show");
+                body.classList.add("body-modal-open")
+        
+                window.history.pushState(String(this.parentElement), "Modal title", document.location+'#modal');
+        
+                window.addEventListener('popstate', function(e) {
+                    photosBoxImage[i].parentElement.classList.remove("masonry-img-show");
+                    body.classList.remove("body-modal-open")
+                }, false);
+                
+                setTimeout(() => {
+                    photosBoxImage[i].parentElement.focus();
+                }, 1);
+                
+            })
+        })
+        
+        photosBoxClose.forEach( (photoboxClose, i) => {
+            photoboxClose.addEventListener('click', function(){
+                if ( window.history.state === String(photosBoxImage[i].parentElement) ) {
+                    history.go(-1);
+                }
+                
+                window.removeEventListener('popstate', function(e){
+                    photosBoxImage[i].parentElement.classList.remove("masonry-img-show");
+                    body.classList.remove("body-modal-open")
+                });
+            })
+        } )
+    }
+    
+    </script>
+
+</body>
+</html>
