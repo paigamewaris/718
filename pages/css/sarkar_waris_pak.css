@@ -1,3 +1,7 @@
+.modal_container.waqiyat_container {
+	height: 150px;
+	overflow: hidden;
+}
 /* genealogical CSS */
 .modal_container.genealogical_section {
 	height: 130px;
