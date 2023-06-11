@@ -100,12 +100,12 @@
             modalOpenClose()
         },
         error: function(xhr, textStatus, err) {
-        alert('Error: here we go...');
-        alert(textStatus);
-        alert(err);
-        alert("readyState: "+xhr.readyState+"\n xhrStatus: "+xhr.status);
-        alert("responseText: "+xhr.responseText);
-    }
+        console.log('Error: here we go...');
+        console.log(textStatus);
+        console.log(err);
+        console.log("readyState: "+xhr.readyState+"\n xhrStatus: "+xhr.status);
+        console.log("responseText: "+xhr.responseText);
+        }
     });
 
     function modalOpenClose() {
