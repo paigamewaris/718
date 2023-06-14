@@ -72,7 +72,7 @@
 .masonry-img-show {
     position: fixed;
     width: calc(100% - 8px);
-    height: calc(100vh - 8px);
+    height: calc(100% - 8px);
     cursor: auto;
     z-index: 100;
 
