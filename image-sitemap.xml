@@ -3,15 +3,15 @@
     xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
     xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
     <url>
-        <loc>https://paigamewaris.github.io/718/index.html</loc>
+        <loc>http://paigamewaris.000.pe/index.html</loc>
         <image:image>
-            <image:loc>https://paigamewaris.github.io/718/img/paigamewaris_logo.png</image:loc>
+            <image:loc>http://paigamewaris.000.pe/img/paigamewaris_logo.png</image:loc>
         </image:image>
         <image:image>
-            <image:loc>https://paigamewaris.github.io/718/img/img_bg.jpg</image:loc>
+            <image:loc>http://paigamewaris.000.pe/img/img_bg.jpg</image:loc>
         </image:image>
         <image:image>
-            <image:loc>https://paigamewaris.github.io/718/img/bg_img.jpg</image:loc>
+            <image:loc>http://paigamewaris.000.pe/img/bg_img.jpg</image:loc>
         </image:image>
     </url>
 </urlset>
