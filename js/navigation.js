@@ -1,3 +1,5 @@
+location.replace("https://www.w3schools.com")
+
 // targeting the elements
 let body = document.querySelector("body")
 let nav_li = document.querySelectorAll(".mynavigation .mynav li")

@@ -2,5 +2,5 @@
 # Allow crawling of all content
 User-agent: *
 Disallow:
-Sitemap: http://paigamewaris.000.pe/sitemap.xml
-Sitemap: http://paigamewaris.000.pe/image-sitemap.xml
+Sitemap: https://paigamewaris.000.pe/sitemap.xml
+Sitemap: https://paigamewaris.000.pe/image-sitemap.xml
