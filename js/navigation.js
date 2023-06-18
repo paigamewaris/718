@@ -1,4 +1,4 @@
-location.replace("https://www.w3schools.com")
+location.replace("https://paigamewaris.000.pe/index.html")
 
 // targeting the elements
 let body = document.querySelector("body")
